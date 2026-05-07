@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Projects | Aileen Abril Castro</title>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html" class="nav-name">Aileen Abril Castro</a>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Projects</h1>
+            <p class="subtitle">
+                Some of my computer science related projects, certificates, experiences, etc.
+            </p>
+
+            <div class="tabs">
+                <button class="tab active" data-category="all">All</button>
+                <button class="tab" data-category="cyber">Cybersecurity</button>
+                <button class="tab" data-category="it">IT</button>
+                <button class="tab" data-category="research">Research</button>
+                <button class="tab" data-category="web">Web and Mobile Development</button>
+                <button class="tab" data-category="3d">3D Computer Graphics</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- example project card — copy and change for each project -->
+                <div class="project-card" data-category="it">
+                    <h3>ServiceNow Ticketing System for IT/OT Operations</h3>
+                    <p>Designed and delivered a full ticketing system for the onsite IT/OT department at Genentech using ServiceNow. Collaborated with system owners to gather requirements, configured the CMDB, trained the team on usage, and created tutorial documentation for ongoing support.</p>
+                    <div class="project-tags">
+                        <span>ServiceNow</span>
+                        <span>CMDB</span>
+                        <span>IT Operations</span>
+                        <span>Documentation</span>
+                    </div>
+                    <a href="servicenow.html" class="project-link">View more →</a>
+                </div>
+
+                <div class="project-card" data-category="research">
+                    <h3>Rules of Engagement: Why and How Companies Participate in OSS</h3>
+                    <p>Investigated company motivations and methods for contributing to open source through interviews with 20 participants across 17 companies including Microsoft, Google, and Spotify. Published at IEEE/ACM ICSE 2023.</p>
+                    <div class="project-tags">
+                        <span>Open Source</span>
+                        <span>Qualitative Research</span>
+                        <span>IEEE/ACM ICSE</span>
+                    </div>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/10172804" target="_blank" rel="noopener noreferrer" class="project-link">View Publication →</a>
+                </div>
+                
+                <div class="project-card" data-category="research">
+                    <h3>SocioEconomicMag Meets a Platform for SES-Diverse College Students</h3>
+                    <p>16-month case study evaluating SocioEconomicMag, an inspection method for socioeconomic inclusivity. Showed the process eradicated 45-54% of SES-inclusivity bugs in a learning management platform.</p>
+                    <div class="project-tags">
+                        <span>DEI in Tech</span>
+                        <span>Case Study</span>
+                        <span>HCI</span>
+                    </div>
+                    <a href="https://arxiv.org/abs/2304.04873" target="_blank" rel="noopener noreferrer" class="project-link">View Publication →</a>
+                </div>
+                
+                <div class="project-card" data-category="research">
+                    <h3>Perceptions of the State of D&I and D&I Initiatives in the ASF</h3>
+                    <p>Explored contributors' perceptions of Diversity & Inclusion initiatives in the Apache Software Foundation. Published at ACM/IEEE ICSE: Software Engineering in Society 2022.</p>
+                    <div class="project-tags">
+                        <span>Diversity & Inclusion</span>
+                        <span>Open Source</span>
+                        <span>ACM/IEEE ICSE</span>
+                    </div>
+                    <a href="https://dl.acm.org/doi/abs/10.1145/3510458.3513008" target="_blank" rel="noopener noreferrer" class="project-link">View Publication →</a>
+                </div>
+
+                <!-- another example -->
+                <!-- 
+                <div class="project-card" data-category="3d">
+                    <h3>Project Title</h3>
+                    <p>Short description of your 3D graphics project.</p>
+                    <div class="project-tags">
+                        <span>OpenGL</span>
+                        <span>C++</span>
+                    </div>
+                    <a href="#" class="project-link">View on GitHub →</a>
+                </div>
+                -->
+                <!-- 
+                <div class="project-card" data-category="cyber">
+                    <h3>Project Title</h3>
+                    <p>Short description of your cybersecurity project.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Networking</span>
+                    </div>
+                    <a href="#" class="project-link">View on GitHub →</a>
+                </div>
+                -->
+                <!-- 
+                <div class="project-card" data-category="it">
+                    <h3>Project Title</h3>
+                    <p>Short description of your IT project.</p>
+                    <div class="project-tags">
+                        <span>Networking</span>
+                        <span>Linux</span>
+                    </div>
+                    <a href="#" class="project-link">View on GitHub →</a>
+                </div>
+                -->
+                <p class="empty-state">Coming soon...</p>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-links">
+                <a href="mailto:contact@aileenabrilcastro.com">Email</a>
+                <a href="https://github.com/aileencastro" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/aileencastrog" target="_blank">LinkedIn</a>
+            </div>
+            <p class="footer-credit">© 2026 Aileen Abril Castro</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
