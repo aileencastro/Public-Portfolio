@@ -14,7 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
             let visibleCount = 0;
 
             cards.forEach(card => {
-                if (category === "all" || card.dataset.category === category) {
+                const categories = card.dataset.category.split("; ");
+                if (category === "all" || categories.includes(category)) {
                     card.style.display = "block";
                     visibleCount++;
                 } else {
@@ -27,8 +28,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-function openLightbox() {
-    document.getElementById("lightbox").classList.add("open");
+function openLightbox(src, alt) {
+    const lightbox = document.getElementById("lightbox");
+    const img = lightbox.querySelector("img");
+    img.src = src;
+    img.alt = alt;
+    lightbox.classList.add("open");
 }
 
 function closeLightbox() {

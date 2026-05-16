@@ -310,6 +310,15 @@ h2::before {
     text-decoration: underline;
 }
 
+.img-small {
+    max-width: 250px;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid rgba(79, 197, 208, 0.15);
+    cursor: pointer;
+}
+
 /* ========== HIGHLIGHTS ========== */
 .highlights {
     display: grid;
@@ -616,6 +625,53 @@ h2::before {
     text-align: center;
     margin-top: 0.5rem;
     margin-bottom: 3rem;
+}
+
+/* ========== BEFORE / AFTER ========== */
+.before-after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.before-after-item {
+    text-align: center;
+}
+
+.before-after-item img {
+    max-width: 250px;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid rgba(79, 197, 208, 0.15);
+}
+
+.before-after-label {
+    display: block;
+    margin-top: 0.5rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgb(79, 197, 208);
+}
+
+.before-after-arrow {
+    font-size: 2rem;
+    color: rgb(79, 197, 208);
+    flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+    .before-after {
+        flex-direction: column;
+    }
+
+    .before-after-arrow {
+        transform: rotate(90deg);
+    }
 }
 
 /* ========== INFO GRID (Project Detail) ========== */

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css">
+        <title>Network Cabling Fundamentals | Aileen Abril Castro</title>
+    </head>
+    <body>
+        <nav>
+            <a href="/" class="nav-name">Aileen Abril Castro</a>
+            <ul class="nav-links">
+                <li><a href="/">About</a></li>
+                <li><a href="/projects/" class="active">Projects</a></li>
+                <li><a href="/blog/">Blog</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <a href="/projects/" class="back-link">← Back to Projects</a>
+
+            <h1>Network Cabling Fundamentals</h1>
+            <p class="subtitle">Hands-on training in structured cabling, fiber safety, and cable identification · May 2026</p>
+
+            <div class="project-tags" style="margin-bottom: 2rem;">
+                <span>Cat6 Cabling</span>
+                <span>Fiber Optic Safety</span>
+                <span>Cable Toning</span>
+                <span>Structured Cabling</span>
+                <span>T568B Standard</span>
+            </div>
+
+            <div class="problem-statement">
+                <p>Participated in hands-on training alongside network technicians to build foundational skills in structured cabling. Covered Cat6 cable termination, fiber optic safety protocols, and cable tracing techniques used in real network environments.</p>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <span class="info-label">01 — RJ45 Termination</span>
+                    <h3>Cat6 cable to RJ45 connector</h3>
+                    <p>Terminated Cat6 Ethernet cables with RJ45 connectors using the T568B wiring standard, including stripping, arranging, and crimping.</p>
+                </div>
+                <div class="info-card">
+                    <span class="info-label">02 — Keystone Termination</span>
+                    <h3>Cat6 cable to keystone jack</h3>
+                    <p>Terminated Cat6 cables into keystone jacks for wall plates and patch panels using a punch down tool and IDC connections.</p>
+                </div>
+                <div class="info-card">
+                    <span class="info-label">03 — Safety</span>
+                    <h3>Fiber optic cable safety</h3>
+                    <p>Trained on proper handling and safety protocols for fiber optic cables, including the importance of treating every cable as active and the physical risks of mishandling.</p>
+                </div>
+                <div class="info-card">
+                    <span class="info-label">04 — Identification</span>
+                    <h3>Toning and tracing cables</h3>
+                    <p>Used toning equipment and cable testers to trace and identify specific cable runs: an essential skill for troubleshooting and documenting network infrastructure.</p>
+                </div>
+                <div class="info-card">
+                    <span class="info-label">Context</span>
+                    <h3>Why this matters</h3>
+                    <p>Understanding the physical layer of networking is critical for IT professionals. These skills bridge the gap between network administration and the infrastructure it depends on.</p>
+                </div>
+            </div>
+
+            <section class="project-detail">
+                <h2>Cat6 cable termination (RJ45 connector) process</h2>
+
+                <div class="before-after">
+                    <div class="before-after-item">
+                        <img src="cat6-before.jpeg" alt="Cat6 cable before termination with exposed wires" onclick="openLightbox(this.src, this.alt)" style="cursor: pointer;">
+                        <span class="before-after-label">Before</span>
+                    </div>
+                    <span class="before-after-arrow">→</span>
+                    <div class="before-after-item">
+                        <img src="cat6-after.jpeg" alt="Cat6 cable after termination with RJ45 connector crimped" onclick="openLightbox(this.src, this.alt)" style="cursor: pointer;">
+                        <span class="before-after-label">After</span>
+                    </div>
+                </div>
+
+                <ul class="feature-list">
+                    <li>Score approximately two inches from the end of the cable jacket using a cable stripper, rotating evenly without cutting into the inner wires</li>                    
+                    <li>Bend and snap at the scored point to cleanly remove the outer jacket, exposing the four twisted pairs</li>
+                    <li>Untwist all four copper wire pairs and straighten each wire individually</li>
+                    <li>Arrange all 8 wires in T568B order from left to right: white/orange, orange, white/green, blue, white/blue, green, white/brown, brown</li>
+                    <li>Hold the wires flat and parallel, then trim them evenly so they extend about half an inch past the jacket</li>
+                    <li>Insert the wires into the RJ45 connector with the clip side facing down, ensuring each wire seats fully into its channel and the jacket sits inside the connector body</li>
+                    <li>Crimp using an RJ45 crimping tool, which drives the metal contacts into each wire and secures the strain relief over the jacket</li>
+                    <li>Test the connection using a cable tester to verify continuity and correct pin mapping across all eight wires</li>            
+                </ul>
+            </section>
+
+
+            <section class="project-detail">
+                <h2>Keystone jack termination</h2>
+                <div class="before-after">
+                    <div class="before-after-item">
+                        <img src="keystone-jack2.jpeg" alt="Keystone jack and its T568B wiring diagram" onclick="openLightbox(this.src, this.alt)" style="cursor: pointer;">
+                    </div>
+                    <div class="before-after-item">
+                        <img src="keystone-jack.jpeg" alt="Keystone jack after cable termination" onclick="openLightbox(this.src, this.alt)" style="cursor: pointer;">
+                    </div>
+                </div>
+                <p>Keystone jacks are the modular ethernet port inserts that snap into wall plates and patch panels, providing the fixed endpoint for a cable run.</p>  
+                <ul class="feature-list">
+                    <li>Strip approximately one to two inches of the outer cable jacket, being careful not to nick the inner wires</li>
+                    <li>Separate and untwist the wire pairs, keeping them as close to the jacket as possible to maintain signal integrity</li>
+                    <li>Seat each wire into the correct color-coded slot on the keystone jack following the T568B wiring diagram printed on the jack</li>
+                    <li>Use a punch down tool to press each wire firmly into its IDC (Insulation Displacement Contact) slot, which cuts through the insulation and makes the connection with the copper conductor</li>
+                    <li>The punch down tool automatically trims the excess wire: verify all wires are seated flush</li>
+                    <li>Snap the keystone jack into the wall plate or patch panel and test the connection with a cable tester</li>
+                </ul>
+            </section>
+
+            <section class="project-detail">
+                <h2>Toning and identifying cables</h2>
+                <div class="before-after">
+                    <div class="before-after-item">
+                        <img src="toning-tools.jpeg" alt="Cable toning tools: probe wand" onclick="openLightbox(this.src, this.alt)" style="cursor: pointer;">
+                    </div>
+                    <div class="before-after-item">
+                        <img src="toning.jpeg" alt="Cable toner device connected to a wire from a wall port" onclick="openLightbox(this.src, this.alt)" style="cursor: pointer;">
+                    </div>
+                </div>
+                <p>Cable toning is used to identify and trace individual cable runs in network environments with large bundles of unlabeled cabling, such as through walls, above ceiling tiles, or behind patch panels.</p>
+                <ul class="feature-list">
+                    <li>Connect one end of the cable to a toner device, which sends a signal through the wire</li>
+                    <li>Take the inductive probe (wand) to the other end and pass it over cable bundles: it emits an audible tone when it detects the signal</li>
+                    <li>Narrow down the exact cable by moving the probe closer to individual cables until the tone is strongest</li>
+                    <li>Confirm the identification using a cable tester, which verifies continuity and correct wiring across all pairs</li>
+                </ul>
+            </section>
+
+            <section class="project-detail">
+                <h2>Fiber optic safety</h2>
+                <div style="text-align: center;">
+                    <img src="fiber-port.jpeg" alt="A fiber optic cable wall port" class="img-small" onclick="openLightbox(this.src, this.alt)" style="cursor: pointer;">
+                </div>
+                <p>Fiber optic cables transmit data using light (laser or LED), which introduces unique safety considerations that differ from copper cabling.</p>
+                <ul class="feature-list">
+                    <li>Never look directly into the end of a fiber optic cable: the infrared laser light is invisible to the eye but can cause permanent retinal damage</li>
+                    <li>Always assume a fiber cable is active, treating it with a "loaded gun" mentality</li>
+                    <li>Handle fiber cables gently: they are made of thin glass strands and can be damaged by sharp bends or excessive force</li>
+                    <li>Keep protective dust caps on connectors when not in use to prevent contamination, which can degrade signal quality</li>
+                    <li>Dispose of any cleaved fiber scraps carefully: the tiny glass fragments are nearly invisible and can pierce skin</li>
+                </ul>
+            </section>
+            <br>
+            <a href="/projects/" class="back-link">← Back to Projects</a>
+        </main>
+
+        <footer>
+            <div class="footer-links">
+                <a href="mailto:contact@aileenabrilcastro.com">Email</a>
+                <a href="https://github.com/aileencastro" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/aileencastrog" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+            <p class="footer-credit">© 2026 Aileen Abril Castro</p>
+        </footer>
+
+        <script src="../../script.js"></script>
+
+        <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+            <img src="" alt="">
+        </div>
+    </body>
+</html>
