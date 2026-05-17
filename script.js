@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const tabs = document.querySelectorAll(".tab");
     const cards = document.querySelectorAll(".project-card");
     const emptyState = document.querySelector(".empty-state");
+    const updates = document.querySelectorAll(".update-card");
 
     tabs.forEach(tab => {
         tab.addEventListener("click", () => {
@@ -26,6 +27,16 @@ document.addEventListener("DOMContentLoaded", () => {
             emptyState.style.display = visibleCount === 0 ? "block" : "none";
         });
     });
+
+    if (updates.length === 0) return;
+
+    let current = 0;
+
+    setInterval(() => {
+        updates[current].classList.remove("active");
+        current = (current + 1) % updates.length;
+        updates[current].classList.add("active");
+    }, 4000);
 });
 
 function openLightbox(src, alt) {

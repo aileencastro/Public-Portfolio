@@ -195,6 +195,45 @@ h2::before {
     text-decoration: underline;
 }
 
+/* ========== UPDATES TICKER ========== */
+.updates-ticker {
+    position: relative;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(79, 197, 208, 0.08);
+    background: rgba(16, 22, 30, 0.4);
+}
+
+.update-card {
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    padding: 0 2rem;
+}
+
+.update-card.active {
+    opacity: 1;
+}
+
+.update-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgb(79, 197, 208);
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.update-card p {
+    color: #c5cdd8;
+    font-size: 0.95rem;
+}
+
 /* ========== HERO / ABOUT ========== */
 #about p {
     color: #8b95a5;
