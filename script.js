@@ -56,3 +56,46 @@ document.addEventListener("keydown", (e) => {
         closeLightbox();
     }
 });
+
+function syncSkillHeights() {
+    const categories = document.querySelectorAll(".skill-category");
+    categories.forEach(cat => cat.style.minHeight = "");
+
+    let maxHeight = 0;
+    categories.forEach(cat => {
+        const list = cat.querySelector(".skill-list");
+        if (list && list.classList.contains("expanded") && cat.offsetHeight > maxHeight) {
+            maxHeight = cat.offsetHeight;
+        }
+    });
+
+    if (maxHeight > 0) {
+        categories.forEach(cat => {
+            const list = cat.querySelector(".skill-list");
+            if (list && list.classList.contains("expanded")) {
+                cat.style.minHeight = maxHeight + "px";
+            }
+        });
+    }
+}
+
+document.querySelectorAll(".skill-toggle").forEach(button => {
+    button.addEventListener("click", () => {
+        const list = button.nextElementSibling;
+        const isOpen = list.classList.contains("expanded");
+
+        if (isOpen) {
+            list.classList.remove("expanded");
+            list.classList.add("collapsed");
+            button.classList.remove("open");
+            button.setAttribute("aria-expanded", "false");
+        } else {
+            list.classList.remove("collapsed");
+            list.classList.add("expanded");
+            button.classList.add("open");
+            button.setAttribute("aria-expanded", "true");
+        }
+
+        setTimeout(syncSkillHeights, 450);
+    });
+});
