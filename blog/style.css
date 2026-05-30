@@ -130,7 +130,7 @@ body {
     margin-bottom: 12px;
     overflow: hidden;
     border-radius: 4px;
-    background: #f0eeeb;
+    background: none;
 }
 
 .insta-item img {
@@ -178,6 +178,11 @@ body {
 
 .insta-item:hover .insta-overlay {
     opacity: 1;
+}
+
+.insta-img-wrap {
+    position: relative;
+    overflow: hidden;
 }
 
 .insta-caption {
