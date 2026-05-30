@@ -181,19 +181,20 @@ body {
 }
 
 .insta-caption {
-    padding: 0.6rem 0.5rem;
+    padding: 0.4rem 0.2rem;
     font-family: 'DM Sans', sans-serif;
-    font-size: 0.62rem;
-    color: #faf9f7;
+    font-size: 0.7rem;
+    color: #aaa;
     line-height: 1.4;
+    background: none;
 }
 
 .insta-caption strong {
-    color: #2c2c2c;
+    color: #888;
     font-weight: 500;
     display: block;
-    margin-bottom: 0.15rem;
-    font-size: 0.65rem;
+    margin-bottom: 0.1rem;
+    font-size: 0.72rem;
 }
 
 /* ========== BLOG POSTS PREVIEW ========== */
