@@ -3,45 +3,244 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../style.css">
-        <title>Blog | Aileen Abril Castro</title>
+        <link rel="stylesheet" href="style.css">
+        <title>Aileen Abril Castro</title>
     </head>
     <body>
-        <nav>
-            <a href="/" class="nav-name">Aileen Abril Castro</a>
-            <ul class="nav-links">
-                <li><a href="/">About</a></li>
-                <li><a href="/projects/">Projects</a></li>
-                <li><a href="/blog/" class="active">Blog</a></li>
-            </ul>
+        <nav class="blog-nav">
+            <a href="index.html" class="blog-nav-name">Aileen Abril Castro</a>
         </nav>
 
-        <main>
-            <h1>Blog</h1>
-            <p class="subtitle">Thoughts on tech, projects, lessons learned, and more. </p>
-
-            <div class="blog-grid">
-                <!-- Example post — to copy for each new post -->
-                <a href="#" class="blog-card">
-                    <span class="blog-date">May 2026</span>
-                    <h3>Welcome to my blog!</h3>
-                    <p>Coming soon...</p>
-                    <!-- 
-                    <span class="blog-read-more">Read more →</span>
-                    -->
-                </a>
+        <div class="blog-tabs">
+            <button class="blog-tab active" data-section="posts">Blog</button>
+            <button class="blog-tab" data-section="grid">Photography</button>
+            <button class="blog-tab" data-section="art">Art</button>
+            <button class="blog-tab" data-section="more">More</button>
+        </div>
+ 
+        <div class="blog-content">
+            <!-- ========== BLOG TAB ========== -->
+            <div class="blog-section active" id="section-posts">
+                <div class="posts-section">
+                    <a href="coming-soon.html" class="blog-post-preview">
+                        <span class="blog-post-date">May 2026</span>
+                        <h3>Welcome to my blog</h3>
+                        <p>First post coming soon! stay tuned for thoughts on tech, travel, and everything in between.</p>
+                        <span class="blog-post-read">Read &rsaquo;</span>
+                    </a>
+ 
+                   
+                </div>
             </div>
-        </main>
-
-        <footer>
-            <div class="footer-links">
-                <a href="mailto:acastro@aileenabrilcastro.com">Email</a>
-                <a href="https://github.com/aileencastro" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/aileencastrog" target="_blank">LinkedIn</a>
+            
+ 
+            <!-- ========== PHOTOS TAB ========== -->
+            <div class="blog-section" id="section-grid">
+                <div class="insta-grid">
+                    <div class="insta-item">
+                        <img src="images/26.jpg" alt="Babel tulum pink architecture with green foliage" onclick="openBlogLightbox(this.src, this.alt, this.parentElement.querySelector('.insta-link').href)">
+                        <a href="https://www.instagram.com/p/DY0KBlGkitZ/" class="insta-link" hidden></a>
+                        <div class="insta-overlay" onclick="event.stopPropagation(); openBlogLightbox(this.parentElement.querySelector('img').src, this.parentElement.querySelector('img').alt, this.parentElement.querySelector('.insta-link').href)">
+                            <span class="insta-view-btn">View more &rsaquo;</span>
+                        </div>
+                    </div>
+            
+                    <div class="insta-item">
+                        <img src="images/petra.JPG" alt="Details of The Treasury in Petra, Jordan" onclick="openBlogLightbox(this.src, this.alt, this.parentElement.querySelector('.insta-link').href)">
+                        <a href="https://www.instagram.com/sirenaslighthouse/p/DJ8rf3_R3zI/" class="insta-link" hidden></a>
+                        <div class="insta-overlay" onclick="event.stopPropagation(); openBlogLightbox(this.parentElement.querySelector('img').src, this.parentElement.querySelector('img').alt, this.parentElement.querySelector('.insta-link').href)">
+                            <span class="insta-view-btn">View more &rsaquo;</span>
+                        </div>
+                    </div>
+            
+                    <div class="insta-item">
+                        <img src="images/cali.JPG" alt="Low rider aqua green classic Cali truck" onclick="openBlogLightbox(this.src, this.alt, this.parentElement.querySelector('.insta-link').href)">
+                        <a href="https://www.instagram.com/sirenaslighthouse/p/DJQ0QAnx2Wj/" class="insta-link" hidden></a>
+                        <div class="insta-overlay" onclick="event.stopPropagation(); openBlogLightbox(this.parentElement.querySelector('img').src, this.parentElement.querySelector('img').alt, this.parentElement.querySelector('.insta-link').href)">
+                            <span class="insta-view-btn">View more &rsaquo;</span>
+                        </div>
+                    </div>
+            
+                    <div class="insta-item">
+                        <img src="images/15 2.jpg" alt="Granite boulder formation in Texas Canyon, Arizona" onclick="openBlogLightbox(this.src, this.alt, this.parentElement.querySelector('.insta-link').href)">
+                        <a href="https://www.instagram.com/sirenaslighthouse/p/DF1FGVxStzg/" class="insta-link" hidden></a>
+                        <div class="insta-overlay" onclick="event.stopPropagation(); openBlogLightbox(this.parentElement.querySelector('img').src, this.parentElement.querySelector('img').alt, this.parentElement.querySelector('.insta-link').href)">
+                            <span class="insta-view-btn">View more &rsaquo;</span>
+                        </div>
+                    </div>
+            
+                    <div class="insta-item">
+                        <img src="images/19.jpg" alt="Girl holding an open watermelon" onclick="openBlogLightbox(this.src, this.alt, this.parentElement.querySelector('.insta-link').href)">
+                        <a href="https://www.instagram.com/sirenaslighthouse/p/DF1EvBqSRyR/" class="insta-link" hidden></a>
+                        <div class="insta-overlay" onclick="event.stopPropagation(); openBlogLightbox(this.parentElement.querySelector('img').src, this.parentElement.querySelector('img').alt, this.parentElement.querySelector('.insta-link').href)">
+                            <span class="insta-view-btn">View more &rsaquo;</span>
+                        </div>
+                    </div>
+            
+                    <div class="insta-item">
+                        <img src="images/27.jpg" alt="A pink rose in front of a window" onclick="openBlogLightbox(this.src, this.alt, this.parentElement.querySelector('.insta-link').href)">
+                        <a href="https://www.instagram.com/sirenaslighthouse/p/DF1DH-bzrLw/" class="insta-link" hidden></a>
+                        <div class="insta-overlay" onclick="event.stopPropagation(); openBlogLightbox(this.parentElement.querySelector('img').src, this.parentElement.querySelector('img').alt, this.parentElement.querySelector('.insta-link').href)">
+                            <span class="insta-view-btn">View more &rsaquo;</span>
+                        </div>
+                    </div>
+            
+                    <div class="insta-item">
+                        <img src="images/20.JPG" alt="Film photo of The Balmoral Hotel in Edinburgh" onclick="openBlogLightbox(this.src, this.alt, this.parentElement.querySelector('.insta-link').href)">
+                        <a href="https://www.instagram.com/p/DAzI32uzl2t/" class="insta-link" hidden></a>
+                        <div class="insta-overlay" onclick="event.stopPropagation(); openBlogLightbox(this.parentElement.querySelector('img').src, this.parentElement.querySelector('img').alt, this.parentElement.querySelector('.insta-link').href)">
+                            <span class="insta-view-btn">View more &rsaquo;</span>
+                        </div>
+                    </div>
+            
+                    <div class="insta-item">
+                        <img src="images/15.JPG" alt="Aileen in front of a field of cows on the Cliffs of Moher" onclick="openBlogLightbox(this.src, this.alt, this.parentElement.querySelector('.insta-link').href)">
+                        <a href="https://www.instagram.com/sirenaslighthouse/p/DAzIeH5TYGY/" class="insta-link" hidden></a>
+                        <div class="insta-overlay" onclick="event.stopPropagation(); openBlogLightbox(this.parentElement.querySelector('img').src, this.parentElement.querySelector('img').alt, this.parentElement.querySelector('.insta-link').href)">
+                            <span class="insta-view-btn">View more &rsaquo;</span>
+                        </div>
+                    </div>
+            
+                    <div class="insta-item">
+                        <img src="images/1.JPG" alt="Silver ladders in a blooming pear orchard" onclick="openBlogLightbox(this.src, this.alt, this.parentElement.querySelector('.insta-link').href)">
+                        <a href="https://www.instagram.com/sirenaslighthouse/p/DAzICrvTHsk/" class="insta-link" hidden></a>
+                        <div class="insta-overlay" onclick="event.stopPropagation(); openBlogLightbox(this.parentElement.querySelector('img').src, this.parentElement.querySelector('img').alt, this.parentElement.querySelector('.insta-link').href)">
+                            <span class="insta-view-btn">View more &rsaquo;</span>
+                        </div>
+                    </div>
+            
+                    <div class="insta-item">
+                        <img src="images/me.jpg" alt="Aileen in mirror selfie with film camera" onclick="openBlogLightbox(this.src, this.alt, this.parentElement.querySelector('.insta-link').href)">
+                        <a href="https://www.instagram.com/sirenaslighthouse/p/C-88E9_yW8j/" class="insta-link" hidden></a>
+                        <div class="insta-overlay" onclick="event.stopPropagation(); openBlogLightbox(this.parentElement.querySelector('img').src, this.parentElement.querySelector('img').alt, this.parentElement.querySelector('.insta-link').href)">
+                            <span class="insta-view-btn">View more &rsaquo;</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p class="footer-credit">© 2026 Aileen Abril Castro</p>
+
+            <!-- ========== ART TAB ========== -->
+            <div class="blog-section" id="section-art">
+                <div class="insta-grid">
+                    <div class="insta-item">
+                        <img src="images/golf.jpeg" alt="Acrylic on canvas painting of Werner Bronkhorst style golf scene" onclick="openBlogLightbox(this.src, this.alt, this.parentElement.querySelector('.insta-link').href)">
+                        <a href="https://www.instagram.com/sirenaslighthouse/p/DY7pcXnGtur/" class="insta-link" hidden></a>
+                        <div class="insta-overlay" onclick="event.stopPropagation(); openBlogLightbox(this.parentElement.querySelector('img').src, this.parentElement.querySelector('img').alt, this.parentElement.querySelector('.insta-link').href)">
+                            <span class="insta-view-btn">View more &rsaquo;</span>
+                        </div>
+                    </div>
+            
+                    <div class="insta-item">
+                        <img src="images/flowers.JPG" alt="Oil pastel sketch of different flowers" onclick="openBlogLightbox(this.src, this.alt, this.parentElement.querySelector('.insta-link').href)">
+                        <a href="https://www.instagram.com/sirenaslighthouse/p/DR5k2vvEp_4/" class="insta-link" hidden></a>
+                        <div class="insta-overlay" onclick="event.stopPropagation(); openBlogLightbox(this.parentElement.querySelector('img').src, this.parentElement.querySelector('img').alt, this.parentElement.querySelector('.insta-link').href)">
+                            <span class="insta-view-btn">View more &rsaquo;</span>
+                        </div>
+                    </div>
+            
+                    <div class="insta-item">
+                        <img src="images/orange.jpg" alt="Oil pastel sketch of blood orange" onclick="openBlogLightbox(this.src, this.alt, this.parentElement.querySelector('.insta-link').href)">
+                        <a href="https://www.instagram.com/sirenaslighthouse/p/DRF8j65koyv/" class="insta-link" hidden></a>
+                        <div class="insta-overlay" onclick="event.stopPropagation(); openBlogLightbox(this.parentElement.querySelector('img').src, this.parentElement.querySelector('img').alt, this.parentElement.querySelector('.insta-link').href)">
+                            <span class="insta-view-btn">View more &rsaquo;</span>
+                        </div>
+                    </div>
+            
+                    <div class="insta-item">
+                        <img src="images/cherries.JPG" alt="Acrylic painting of cherries" onclick="openBlogLightbox(this.src, this.alt, this.parentElement.querySelector('.insta-link').href)">
+                        <a href="https://www.instagram.com/sirenaslighthouse/p/DAXQgRVvFD8/" class="insta-link" hidden></a>
+                        <div class="insta-overlay" onclick="event.stopPropagation(); openBlogLightbox(this.parentElement.querySelector('img').src, this.parentElement.querySelector('img').alt, this.parentElement.querySelector('.insta-link').href)">
+                            <span class="insta-view-btn">View more &rsaquo;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- ========== MORE TAB ========== -->
+            <div class="blog-section" id="section-more">
+                <div class="more-grid">
+                    <a href="https://www.instagram.com/sirenaslighthouse/" target="_blank" rel="noopener noreferrer" class="more-card">
+                        <span class="more-card-label">Social</span>
+                        <span class="more-card-title">Instagram</span>
+                        <br>
+                        <span class="more-card-desc">Photography and art</span>
+                    </a>
+ 
+                    <a href="https://www.linkedin.com/in/aileencastrog" target="_blank" rel="noopener noreferrer" class="more-card">
+                        <span class="more-card-label">Professional</span>
+                        <span class="more-card-title">LinkedIn</span>
+                        <br>
+                        <span class="more-card-desc">Connect with me</span>
+                    </a>
+ 
+                    <a href="https://www.aileenabrilcastro.com/" target="_blank" rel="noopener noreferrer" class="more-card">
+                        <span class="more-card-label">Work</span>
+                        <span class="more-card-title">Computer Science Portfolio</span>
+                        <br>
+                        <span class="more-card-desc">Projects, research, and skills</span>
+                    </a>
+ 
+                </div>
+            </div>
+        </div>
+ 
+        <footer class="blog-footer">
+            <p>&copy; 2026 Aileen Abril Castro</p>
         </footer>
 
-        <script src="../script.js"></script>
+        <div class="blog-lightbox" id="blogLightbox" onclick="closeBlogLightbox()">
+            <img src="" alt="">
+            <a href="#" id="lightbox-link" target="_blank" rel="noopener noreferrer" class="lightbox-view-btn" onclick="event.stopPropagation()">View on Instagram &rsaquo;</a>
+        </div>
+ 
+        <script>
+            // tab switching
+            function switchTab(sectionName) {
+                document.querySelectorAll(".blog-tab").forEach(t => t.classList.remove("active"));
+                document.querySelectorAll(".blog-section").forEach(s => s.classList.remove("active"));
+
+                const tab = document.querySelector(`.blog-tab[data-section="${sectionName}"]`);
+                const section = document.getElementById("section-" + sectionName);
+
+                if (tab && section) {
+                    tab.classList.add("active");
+                    section.classList.add("active");
+                    window.location.hash = sectionName;
+                }
+            }
+
+            document.querySelectorAll(".blog-tab").forEach(tab => {
+                tab.addEventListener("click", () => {
+                    switchTab(tab.dataset.section);
+                });
+            });
+
+            // Load tab from URL hash on page load
+            const hash = window.location.hash.replace("#", "");
+            if (hash && document.getElementById("section-" + hash)) {
+                switchTab(hash);
+            }
+ 
+            // lightbox
+            function openBlogLightbox(src, alt, link) {
+                const lb = document.getElementById("blogLightbox");
+                lb.querySelector("img").src = src;
+                lb.querySelector("img").alt = alt;
+                const linkEl = document.getElementById("lightbox-link");
+                linkEl.href = link;
+                linkEl.style.display = link ? "inline-block" : "none";
+                lb.classList.add("open");
+            }
+            
+ 
+            function closeBlogLightbox() {
+                document.getElementById("blogLightbox").classList.remove("open");
+            }
+ 
+            document.addEventListener("keydown", (e) => {
+                if (e.key === "Escape") closeBlogLightbox();
+            });
+        </script>
     </body>
 </html>
+ 
