@@ -118,63 +118,47 @@ body {
     display: block;
 }
 
-/* ========== INSTAGRAM GRID ========== */
+/* ========== MASONRY GRID ========== */
 .insta-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 4px;
+    columns: 3;
+    column-gap: 12px;
 }
 
 .insta-item {
     position: relative;
-    aspect-ratio: 1;
+    break-inside: avoid;
+    margin-bottom: 12px;
     overflow: hidden;
+    border-radius: 4px;
     background: #f0eeeb;
 }
 
 .insta-item img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    display: block;
     transition: transform 0.5s ease;
+    cursor: pointer;
 }
 
 .insta-item:hover img {
-    transform: scale(1.08);
+    transform: scale(1.03);
 }
 
-.insta-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 0.6rem 0.75rem;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.55));
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    opacity: 0;
-    transition: opacity 0.3s;
+.insta-caption {
+    padding: 0.6rem 0.5rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.82rem;
+    color: #888;
+    line-height: 1.4;
 }
 
-.insta-item:hover .insta-overlay {
-    opacity: 1;
-}
-
-.insta-view-btn {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.65rem;
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 0.06em;
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
-    transition: opacity 0.3s;
-}
-
-.insta-view-btn:hover {
-    opacity: 0.8;
+.insta-caption strong {
+    color: #2c2c2c;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0.15rem;
+    font-size: 0.85rem;
 }
 
 /* ========== BLOG POSTS PREVIEW ========== */
@@ -402,7 +386,9 @@ body {
     }
 
     .insta-grid {
-        grid-template-columns: repeat(2, 1fr);
+        .insta-grid {
+            columns: 2;
+        }
     }
 
     .blog-content {
