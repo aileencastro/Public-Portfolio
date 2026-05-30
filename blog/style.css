@@ -183,8 +183,8 @@ body {
 .insta-caption {
     padding: 0.6rem 0.5rem;
     font-family: 'DM Sans', sans-serif;
-    font-size: 0.82rem;
-    color: #888;
+    font-size: 0.62rem;
+    color: #faf9f7;
     line-height: 1.4;
 }
 
@@ -193,7 +193,7 @@ body {
     font-weight: 500;
     display: block;
     margin-bottom: 0.15rem;
-    font-size: 0.85rem;
+    font-size: 0.65rem;
 }
 
 /* ========== BLOG POSTS PREVIEW ========== */
