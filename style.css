@@ -388,6 +388,15 @@ h2::before {
     font-size: 0.95rem;
 }
 
+.highlight-link {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.highlight-link:hover {
+    color: rgb(79, 197, 208);
+}
+
 /* ========== SKILLS ========== */
 .skills-grid {
     display: grid;

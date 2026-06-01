@@ -24,19 +24,27 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             });
 
-            emptyState.style.display = visibleCount === 0 ? "block" : "none";
+            if (emptyState) {
+                emptyState.style.display = visibleCount === 0 ? "block" : "none";
+            }
         });
     });
 
-    if (updates.length === 0) return;
+    // Auto-open research tab from hash link
+    if (window.location.hash === "#research") {
+        const tab = document.querySelector('.tab[data-category="research"]');
+        if (tab) tab.click();
+    }
 
-    let current = 0;
-
-    setInterval(() => {
-        updates[current].classList.remove("active");
-        current = (current + 1) % updates.length;
-        updates[current].classList.add("active");
-    }, 4000);
+    // Updates ticker
+    if (updates.length > 0) {
+        let current = 0;
+        setInterval(() => {
+            updates[current].classList.remove("active");
+            current = (current + 1) % updates.length;
+            updates[current].classList.add("active");
+        }, 4000);
+    }
 });
 
 function openLightbox(src, alt) {
