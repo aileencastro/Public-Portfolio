@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Page Not Found | Aileen Abril Castro</title>
+        <link rel="icon" type="image/png" href="/favicon.PNG">
+    </head>
+    <body>
+        <nav>
+            <a href="/" class="nav-name">Aileen Abril Castro</a>
+            <ul class="nav-links">
+                <li><a href="/">About</a></li>
+                <li><a href="/projects/">Projects</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="not-found">
+                <span class="not-found-code">404</span>
+                <p class="not-found-text"></p>
+                <div class="not-found-links">
+                    <a href="/" class="not-found-link">← Home</a>
+                    <a href="/projects/" class="not-found-link">Projects</a>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p class="footer-credit">© 2026 Aileen Abril Castro</p>
+        </footer>
+
+        <script>
+            const messages = [
+                "This page doesn't exist yet...",
+                "Still working on this one...",
+                "Nothing here yet, check back soon!",
+                "Page not found, but I'm building things!",
+                "Coming soon..."
+            ];
+            const random = messages[Math.floor(Math.random() * messages.length)];
+            document.querySelector(".not-found-text").textContent = random;
+        </script>
+    </body>
+</html>

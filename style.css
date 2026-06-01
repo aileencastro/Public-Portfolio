@@ -94,6 +94,35 @@ nav {
     width: 100%;
 }
 
+/* ========== PAGE TABS ========== */
+.page-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(79, 197, 208, 0.08);
+    background: rgba(10, 14, 20, 0.6);
+}
+
+.page-tab {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    color: #5a6270;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.page-tab:hover {
+    color: rgb(79, 197, 208);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px;
+}
+
 /* ========== MAIN CONTENT ========== */
 main {
     max-width: 960px;
@@ -198,7 +227,7 @@ h2::before {
 /* ========== UPDATES TICKER ========== */
 .updates-ticker {
     position: relative;
-    height: 80px;
+    height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,10 +242,12 @@ h2::before {
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
     padding: 0 2rem;
+    pointer-events: none;
 }
 
 .update-card.active {
     opacity: 1;
+    pointer-events: auto;
 }
 
 .update-label {
@@ -232,6 +263,24 @@ h2::before {
 .update-card p {
     color: #c5cdd8;
     font-size: 0.95rem;
+}
+
+a.update-card {
+    text-decoration: none;
+}
+
+.update-link {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: rgb(79, 197, 208);
+    margin-top: 0.3rem;
+    display: block;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+a.update-card:hover .update-link {
+    opacity: 1;
 }
 
 /* ========== HERO / ABOUT ========== */
@@ -898,6 +947,49 @@ footer {
     color: #2a3040;
     font-size: 0.75rem;
     font-family: 'JetBrains Mono', monospace;
+}
+
+/* ========== 404 PAGE ========== */
+.not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    text-align: center;
+}
+
+.not-found-code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 5rem;
+    font-weight: 700;
+    color: rgba(79, 197, 208, 0.15);
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.not-found-text {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.1rem;
+    color: #5a6270;
+    margin-bottom: 2rem;
+}
+
+.not-found-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.not-found-link {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: rgb(79, 197, 208);
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.not-found-link:hover {
+    opacity: 0.7;
 }
 
 /* ========== RESPONSIVE ========== */
