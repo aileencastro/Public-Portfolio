@@ -273,38 +273,36 @@
  
             <!-- ========== MORE TAB ========== -->
             <div class="blog-section" id="section-more">
-                <div class="more-grid">
-                    <a href="https://www.instagram.com/sirenaslighthouse/" target="_blank" rel="noopener noreferrer" class="more-card">
+                <div class="more-scatter">
+                    <a href="https://www.instagram.com/sirenaslighthouse/" target="_blank" rel="noopener noreferrer" class="more-card scatter-more" style="top: 5%; left: 5%; transform: rotate(-1deg);">
                         <span class="more-card-label">Social</span>
                         <span class="more-card-title">Instagram</span>
                         <br>
                         <span class="more-card-desc">Photography and art</span>
                     </a>
-                    
-                    <a href="mailto:contact@aileenabrilcastro.com" class="more-card" aria-label="Send email to Aileen">
+                
+                    <a href="mailto:contact@aileenabrilcastro.com" class="more-card scatter-more" style="top: 8%; right: 10%; transform: rotate(1.2deg);">
                         <span class="more-card-label">Contact</span>
                         <span class="more-card-title">Email</span>
                         <br>
                         <span class="more-card-desc">Contact me</span>
                     </a>
- 
-                    <a href="https://www.linkedin.com/in/aileencastrog" target="_blank" rel="noopener noreferrer" class="more-card">
+                
+                    <a href="https://www.linkedin.com/in/aileencastrog" target="_blank" rel="noopener noreferrer" class="more-card scatter-more" style="top: 50%; left: 15%; transform: rotate(0.5deg);">
                         <span class="more-card-label">Professional</span>
                         <span class="more-card-title">LinkedIn</span>
                         <br>
                         <span class="more-card-desc">Connect with me</span>
                     </a>
- 
-                    <a href="https://www.aileenabrilcastro.com/" target="_blank" rel="noopener noreferrer" class="more-card">
+                
+                    <a href="https://www.aileenabrilcastro.com/" target="_blank" rel="noopener noreferrer" class="more-card scatter-more" style="top: 48%; right: 8%; transform: rotate(-0.8deg);">
                         <span class="more-card-label">Work</span>
                         <span class="more-card-title">Computer Science Portfolio</span>
                         <br>
                         <span class="more-card-desc">Projects, research, and skills</span>
                     </a>
- 
                 </div>
             </div>
-        </div>
  
         <footer class="blog-footer">
             <div class="blog-footer-links">
@@ -342,7 +340,7 @@
                 });
             });
 
-            // Load tab from URL hash on page load
+            // load tab from URL hash on page load
             const hash = window.location.hash.replace("#", "");
             if (hash && document.getElementById("section-" + hash)) {
                 switchTab(hash);
