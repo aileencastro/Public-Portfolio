@@ -524,4 +524,20 @@ body {
     .more-grid {
         grid-template-columns: 1fr;
     }
+
+    .more-scatter {
+        position: static;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem 0;
+    }
+
+    .scatter-more {
+        position: static;
+        width: 100%;
+        height: auto;
+        transform: none !important;
+    }
 }
