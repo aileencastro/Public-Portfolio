@@ -417,6 +417,26 @@ body {
     color: #2c2c2c;
 }
 
+.blog-footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.blog-footer-links a {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: #999;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: color 0.3s;
+}
+
+.blog-footer-links a:hover {
+    color: #2c2c2c;
+}
+
 /* ========== COMING SOON ========== */
 .coming-soon {
     display: flex;
