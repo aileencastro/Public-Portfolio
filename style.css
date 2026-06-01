@@ -874,6 +874,79 @@ a.update-card:hover .update-link {
     }
 }
 
+/* ========== NUMBERED STEPS ========== */
+.steps {
+    max-width: 900px;
+    counter-reset: step;
+}
+
+.step {
+    display: flex;
+    gap: 1.2rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(79, 197, 208, 0.06);
+    counter-increment: step;
+}
+
+.step::before {
+    content: counter(step, decimal-leading-zero);
+    font-family: 'JetBrains Mono', monospace;
+    color: rgba(79, 197, 208, 0.3);
+    font-size: 1.4rem;
+    font-weight: 700;
+    min-width: 36px;
+    line-height: 1.4;
+}
+
+.step p {
+    color: #c5cdd8;
+    font-size: 0.92rem;
+    line-height: 1.7;
+}
+
+.step-section {
+    margin-bottom: 3.5rem;
+}
+
+.step-section-intro {
+    color: #8b95a5;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    max-width: 700px;
+    margin-bottom: 1.5rem;
+}
+
+.step-images {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+}
+
+.step-images img {
+    max-width: 250px;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid rgba(79, 197, 208, 0.12);
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.step-images img:hover {
+    border-color: rgba(79, 197, 208, 0.3);
+}
+
+.step-image-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(79, 197, 208, 0.5);
+    text-align: center;
+    margin-top: 0.4rem;
+}
+
 /* ========== TITLE WITH LOGO ========== */
 .title-with-logo {
     display: flex;
