@@ -68,12 +68,12 @@
                 <div class="before-after">
                     <div class="before-after-item">
                         <img src="cat6-before.jpeg" alt="Cat6 cable before termination with exposed wires" onclick="openLightbox(this.src, this.alt)" style="cursor: pointer;">
-                        <span class="before-after-label">Before</span>
+                        <p class="step-image-label">Before</p>
                     </div>
                     <span class="before-after-arrow">→</span>
                     <div class="before-after-item">
                         <img src="cat6-after.jpeg" alt="Cat6 cable after termination with RJ45 connector crimped" onclick="openLightbox(this.src, this.alt)" style="cursor: pointer;">
-                        <span class="before-after-label">After</span>
+                        <p class="step-image-label">After</p>
                     </div>
                 </div>
 
@@ -90,52 +90,68 @@
             </div>
 
 
-            <section class="project-detail">
+            <div class="step-section">
                 <h2>Keystone jack termination</h2>
-                <div class="before-after">
-                    <div class="before-after-item">
+
+                <div class="step-images">
+                    <div>
                         <img src="keystone-jack2.jpeg" alt="Keystone jack and its T568B wiring diagram" onclick="openLightbox(this.src, this.alt)" style="cursor: pointer;">
+                        <p class="step-image-label">Wiring diagram</p>
                     </div>
-                    <div class="before-after-item">
+                    <div>
                         <img src="keystone-jack.jpeg" alt="Keystone jack after cable termination" onclick="openLightbox(this.src, this.alt)" style="cursor: pointer;">
+                        <p class="step-image-label">Completed</p>
                     </div>
                 </div>
-                <p>Keystone jacks are the modular ethernet port inserts that snap into wall plates and patch panels, providing the fixed endpoint for a cable run.</p>  
-                <ul class="feature-list">
-                    <li>Strip approximately one to two inches of the outer cable jacket, being careful not to nick the inner wires</li>
-                    <li>Separate and untwist the wire pairs, keeping them as close to the jacket as possible to maintain signal integrity</li>
-                    <li>Seat each wire into the correct color-coded slot on the keystone jack following the T568B wiring diagram printed on the jack</li>
-                    <li>Use a punch down tool to press each wire firmly into its IDC (Insulation Displacement Contact) slot, which cuts through the insulation and makes the connection with the copper conductor</li>
-                    <li>The punch down tool automatically trims the excess wire: verify all wires are seated flush</li>
-                    <li>Snap the keystone jack into the wall plate or patch panel and test the connection with a cable tester</li>
-                </ul>
-            </section>
 
-            <section class="project-detail">
+                <p class="step-section-intro">Keystone jacks are the modular ethernet port inserts that snap into wall plates and patch panels, providing the fixed endpoint for a cable run.</p>  
+                
+                <div class="steps">
+                    <div class="step"><p>Strip approximately one to two inches of the outer cable jacket, being careful not to nick the inner wires</p></div>
+                    <div class="step"><p>Separate and untwist the wire pairs, keeping them as close to the jacket as possible to maintain signal integrity</p></div>
+                    <div class="step"><p>Seat each wire into the correct color-coded slot on the keystone jack following the T568B wiring diagram printed on the jack</p></div>
+                    <div class="step"><p>Use a punch down tool to press each wire firmly into its IDC (Insulation Displacement Contact) slot, which cuts through the insulation and makes the connection with the copper conductor</p></div>
+                    <div class="step"><p>The punch down tool automatically trims the excess wire: verify all wires are seated flush</p></div>
+                    <div class="step"><p>Snap the keystone jack into the wall plate or patch panel and test the connection with a cable tester</p></div>
+                </div>
+            </div>
+
+            <div class="step-section">
                 <h2>Toning and identifying cables</h2>
-                <div class="before-after">
-                    <div class="before-after-item">
-                        <img src="toning-tools.jpeg" alt="Cable toning tools: probe wand" onclick="openLightbox(this.src, this.alt)" style="cursor: pointer;">
-                    </div>
-                    <div class="before-after-item">
-                        <img src="toning.jpeg" alt="Cable toner device connected to a wire from a wall port" onclick="openLightbox(this.src, this.alt)" style="cursor: pointer;">
-                    </div>
-                </div>
-                <p>Cable toning is used to identify and trace individual cable runs in network environments with large bundles of unlabeled cabling, such as through walls, above ceiling tiles, or behind patch panels.</p>
-                <ul class="feature-list">
-                    <li>Connect one end of the cable to a toner device, which sends a signal through the wire</li>
-                    <li>Take the inductive probe (wand) to the other end and pass it over cable bundles: it emits an audible tone when it detects the signal</li>
-                    <li>Narrow down the exact cable by moving the probe closer to individual cables until the tone is strongest</li>
-                    <li>Confirm the identification using a cable tester, which verifies continuity and correct wiring across all pairs</li>
-                </ul>
-            </section>
 
-            <section class="project-detail">
-                <h2>Fiber optic safety</h2>
-                <div style="text-align: center;">
-                    <img src="fiber-port.jpeg" alt="A fiber optic cable wall port" class="img-small" onclick="openLightbox(this.src, this.alt)" style="cursor: pointer;">
+                <div class="step-images">
+                    <div>
+                        <img src="toning-tools.jpeg" alt="Cable toning probe wand" onclick="openLightbox(this.src, this.alt)">
+                        <p class="step-image-label">Probe wand</p>
+                    </div>
+                    <div>
+                        <img src="toning.jpeg" alt="Cable toner device connected to wall port" onclick="openLightbox(this.src, this.alt)">
+                        <p class="step-image-label">Toner device</p>
+                    </div>
                 </div>
-                <p>Fiber optic cables transmit data using light (laser or LED), which introduces unique safety considerations that differ from copper cabling.</p>
+
+                <p class="step-section-intro">Cable toning is used to identify and trace individual cable runs in network environments with large bundles of unlabeled cabling, such as through walls, above ceiling tiles, or behind patch panels.</p>
+                
+                <div class="steps">
+                    <div class="step"><p>Connect one end of the cable to a toner device, which sends a signal through the wire</p></div>
+                    <div class="step"><p>Take the inductive probe (wand) to the other end and pass it over cable bundles: it emits an audible tone when it detects the signal</p></div>
+                    <div class="step"><p>Narrow down the exact cable by moving the probe closer to individual cables until the tone is strongest</p></div>
+                    <div class="step"><p>Confirm the identification using a cable tester, which verifies continuity and correct wiring across all pairs</p></div>
+                </div>
+            </div>
+
+            <div class="step-section">
+                <h2>Fiber optic safety</h2>
+
+                <div class="step-images">
+                    <div>
+                        <img src="fiber-port.jpeg" alt="A fiber optic cable wall port" onclick="openLightbox(this.src, this.alt)">
+                        <p class="step-image-label">Fiber port</p>
+                    </div>
+                </div>
+
+                <p class="step-section-intro">Fiber optic cables transmit data using light (laser or LED), which introduces unique safety considerations that differ from copper cabling.</p>
+                
                 <ul class="feature-list">
                     <li>Never look directly into the end of a fiber optic cable: the infrared laser light is invisible to the eye but can cause permanent retinal damage</li>
                     <li>Always assume a fiber cable is active, treating it with a "loaded gun" mentality</li>
@@ -143,10 +159,12 @@
                     <li>Keep protective dust caps on connectors when not in use to prevent contamination, which can degrade signal quality</li>
                     <li>Dispose of any cleaved fiber scraps carefully: the tiny glass fragments are nearly invisible and can pierce skin</li>
                 </ul>
-            </section>
+            </div>
+
             <br>
                 <p>Special thanks to Stephen, Coy, John, Jake, Bill, and Jose for the training!</p>
             <br>
+
             <a href="/projects/" class="back-link">← Back to Projects</a>
         </main>
 

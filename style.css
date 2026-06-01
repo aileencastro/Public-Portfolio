@@ -724,7 +724,7 @@ a.update-card:hover .update-link {
 
 .feature-list {
     list-style: none;
-    max-width: 700px;
+    max-width: 900px;
 }
 
 .feature-list li {
@@ -868,6 +868,12 @@ a.update-card:hover .update-link {
     font-size: 0.85rem;
 }
 
+.info-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    max-width: 50%;
+    justify-self: center;
+}
+
 @media (max-width: 600px) {
     .info-grid {
         grid-template-columns: 1fr;
@@ -912,7 +918,7 @@ a.update-card:hover .update-link {
     color: #8b95a5;
     font-size: 0.95rem;
     line-height: 1.7;
-    max-width: 700px;
+    max-width: 900px;
     margin-bottom: 1.5rem;
 }
 
@@ -921,6 +927,8 @@ a.update-card:hover .update-link {
     gap: 1rem;
     margin: 1.5rem 0;
     flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
 }
 
 .step-images img {
