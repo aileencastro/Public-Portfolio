@@ -878,6 +878,10 @@ a.update-card:hover .update-link {
     .info-grid {
         grid-template-columns: 1fr;
     }
+
+    .info-card:last-child:nth-child(odd) {
+        max-width: 100%;
+    }
 }
 
 /* ========== NUMBERED STEPS ========== */
