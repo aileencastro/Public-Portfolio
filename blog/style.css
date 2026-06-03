@@ -187,7 +187,7 @@ body {
 
 .insta-caption {
     padding: 0.4rem 0.2rem;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 0.7rem;
     color: #aaa;
     line-height: 1.4;
