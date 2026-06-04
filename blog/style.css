@@ -14,6 +14,11 @@ body {
     font-size: 16px;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
 /* ========== BLOG NAV ========== */
 .blog-nav {
     display: flex;
@@ -297,6 +302,269 @@ body {
 .scatter-deco:hover {
     transform: scale(1.15);
     opacity: 1;
+}
+
+/* ========== BLOG POST PAGE ========== */
+.blog-post {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.post-header {
+    margin-bottom: 3rem;
+}
+
+.post-date {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: #bbb;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.post-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #2c2c2c;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.75rem;
+}
+
+.post-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #999;
+    font-weight: 400;
+}
+
+.post-body h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2c2c2c;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.post-body p {
+    font-family: 'DM Sans', sans-serif;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.85;
+    margin-bottom: 1.2rem;
+}
+
+.post-images {
+    display: flex;
+    gap: 0.75rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post-images img {
+    max-height: 350px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.post-images img:hover {
+    transform: scale(1.02);
+}
+
+.post-back {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: #999;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 3rem;
+    transition: color 0.3s;
+}
+
+.post-back:hover {
+    color: #2c2c2c;
+}
+
+.post-images-row {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+    justify-content: center;
+}
+
+.post-images-row img {
+    width: calc(33.33% - 0.35rem);
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.post-images-row img:hover {
+    transform: scale(1.02);
+}
+
+.post-images-row.two img {
+    width: calc(50% - 0.25rem);
+    height: 200px;
+}
+
+.post-images-row.one img {
+    width: calc(100% - 0.25rem);
+    height: 250px;
+}
+
+/* ========== TRIP CALENDAR ========== */
+.itinerary-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c2c2c;
+    margin-bottom: 0.3rem;
+}
+
+.trip-calendar {
+    display: flex;
+    gap: 2px;
+    margin: 0 0 2.5rem 0;
+    overflow-x: auto;
+}
+
+.trip-day {
+    flex: 1;
+    min-width: 130px;
+    padding: 1rem;
+    border: 1px solid #e8e6e1;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    transition: border-color 0.3s;
+}
+
+.trip-day:hover {
+    border-color: #bbb;
+}
+
+.trip-day-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #bbb;
+}
+
+.trip-day-date {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: #999;
+}
+
+.trip-day-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #2c2c2c;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a.trip-day-title:hover {
+    color: #888;
+}
+
+.trip-day-detail {
+    font-size: 0.75rem;
+    color: #aaa;
+    line-height: 1.4;
+    margin-top: 0.2rem;
+}
+
+@media (max-width: 600px) {
+    .trip-calendar {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .trip-day {
+        min-width: unset;
+    }
+}
+
+/* ========== COST BREAKDOWN ========== */
+.cost-breakdown {
+    margin: 1.5rem 0;
+    max-width: 400px;
+}
+
+.cost-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e8e6e1;
+}
+
+.cost-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.cost-amount {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: #2c2c2c;
+}
+
+.cost-total {
+    border-bottom: none;
+    border-top: 2px solid #2c2c2c;
+    margin-top: 0.25rem;
+    padding-top: 0.75rem;
+}
+
+.cost-total .cost-label,
+.cost-total .cost-amount {
+    font-weight: 600;
+    color: #2c2c2c;
+}
+
+/* ========== POST TABS ========== */
+.post-tabs {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e8e6e1;
+}
+
+.post-tab {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: #bbb;
+    background: none;
+    border: 1px solid #e8e6e1;
+    border-radius: 20px;
+    padding: 0.35rem 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.post-tab:hover,
+.post-tab.active {
+    color: #2c2c2c;
+    border-color: #2c2c2c;
 }
 
 /* ========== MORE / LINKS PAGE ========== */
