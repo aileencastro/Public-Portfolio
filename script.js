@@ -114,3 +114,14 @@ document.querySelectorAll(".skill-toggle").forEach(button => {
         setTimeout(syncSkillHeights, 450);
     });
 });
+
+// Set active nav link based on current page
+const currentPath = window.location.pathname;
+document.querySelectorAll(".nav-links > li > a").forEach(link => {
+    const href = link.getAttribute("href");
+    if (currentPath === "/" && href === "/") {
+        link.classList.add("active");
+    } else if (href !== "/" && currentPath.startsWith(href)) {
+        link.classList.add("active");
+    }
+});
