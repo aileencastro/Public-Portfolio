@@ -36,6 +36,13 @@ document.addEventListener("DOMContentLoaded", () => {
         if (tab) tab.click();
     }
 
+    // Auto-open for projects dropdown nav from hash
+    const hashValue = window.location.hash.replace("#", "");
+    if (hashValue) {
+        const tab = document.querySelector(`.tab[data-category="${hashValue}"]`);
+        if (tab) tab.click();
+    }
+
     // Updates ticker
     if (updates.length > 0) {
         let current = 0;
