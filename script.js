@@ -30,18 +30,20 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Auto-open research tab from hash link
-    if (window.location.hash === "#research") {
-        const tab = document.querySelector('.tab[data-category="research"]');
-        if (tab) tab.click();
+    // Auto-open tab from hash (on page load AND hash change)
+    function openTabFromHash() {
+        const hashValue = window.location.hash.replace("#", "");
+        if (hashValue) {
+            const tab = document.querySelector(`.tab[data-category="${hashValue}"]`);
+            if (tab) tab.click();
+        }
     }
 
-    // Auto-open for projects dropdown nav from hash
-    const hashValue = window.location.hash.replace("#", "");
-    if (hashValue) {
-        const tab = document.querySelector(`.tab[data-category="${hashValue}"]`);
-        if (tab) tab.click();
-    }
+    // Run on page load
+    openTabFromHash();
+
+    // Run when hash changes (dropdown clicks on same page)
+    window.addEventListener("hashchange", openTabFromHash);
 
     // Updates ticker
     if (updates.length > 0) {
