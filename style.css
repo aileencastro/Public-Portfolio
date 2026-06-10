@@ -95,11 +95,11 @@ nav {
 }
 
 .nav-logo {
-    height: 32px;
+    height: 36px;
     vertical-align: middle;
     margin-right: 0.5rem;
     position: relative;
-    top: -2px;
+    top: -5px;
 }
 
 /* ========== DROPDOWN NAV ========== */
