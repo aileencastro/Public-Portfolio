@@ -95,9 +95,11 @@ nav {
 }
 
 .nav-logo {
-    height: 24px;
+    height: 32px;
     vertical-align: middle;
     margin-right: 0.5rem;
+    position: relative;
+    top: -2px;
 }
 
 /* ========== DROPDOWN NAV ========== */
@@ -1100,7 +1102,7 @@ footer {
 
 .footer-logo {
     height: 90px;
-    opacity: 0.3;
+    opacity: 0.6;
     margin-bottom: 0.75rem;
 }
 
