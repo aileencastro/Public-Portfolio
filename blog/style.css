@@ -66,9 +66,11 @@ html {
 }
 
 .nav-logo {
-    height: 30px;
+    height: 34px;
     vertical-align: middle;
     margin-right: 0.5rem;
+    position: relative;
+    top: -2px;
 }
 
 /* ========== BLOG TABS ========== */
@@ -733,7 +735,7 @@ a.trip-day-title:hover {
 }
 
 .footer-logo {
-    height: 80px;
+    height: 100px;
     opacity: 0.6;
     margin-bottom: 0.75rem;
 }
