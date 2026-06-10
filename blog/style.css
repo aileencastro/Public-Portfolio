@@ -65,6 +65,12 @@ html {
     color: #2c2c2c;
 }
 
+.nav-logo {
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
 /* ========== BLOG TABS ========== */
 .blog-tabs {
     display: flex;
@@ -724,6 +730,12 @@ a.trip-day-title:hover {
 
 .blog-footer-links a:hover {
     color: #2c2c2c;
+}
+
+.footer-logo {
+    height: 30px;
+    opacity: 0.3;
+    margin-bottom: 0.75rem;
 }
 
 /* ========== COMING SOON ========== */
