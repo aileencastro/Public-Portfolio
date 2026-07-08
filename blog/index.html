@@ -17,9 +17,9 @@
 
         <div class="blog-tabs">
             <button class="blog-tab active" data-section="posts">Blog</button>
-            <button class="blog-tab" data-section="photography">Photography</button>
-            <button class="blog-tab" data-section="art">Art</button>
-            <button class="blog-tab" data-section="more">More</button>
+            <button class="blog-tab" data-section="photography" data-en="Photography" data-es="Fotografía">Photography</button>
+            <button class="blog-tab" data-section="art" data-en="Art" data-es="Arte">Art</button>
+            <button class="blog-tab" data-section="more" data-en="More" data-es="Más">More</button>
         </div>
  
         <div class="blog-content">
@@ -378,7 +378,27 @@
             document.addEventListener("keydown", (e) => {
                 if (e.key === "Escape") closeBlogLightbox();
             });
+
+            function toggleLang() {
+                const current = localStorage.getItem("lang") || "en";
+                const newLang = current === "en" ? "es" : "en";
+                setLang(newLang);
+            }
+
+            function setLang(lang) {
+                localStorage.setItem("lang", lang);
+                document.querySelectorAll("[data-en][data-es]").forEach(el => {
+                    el.innerHTML = el.getAttribute("data-" + lang);
+                });
+                const btn = document.querySelector(".lang-toggle");
+                if (btn) btn.textContent = lang === "en" ? "ES" : "EN";
+            }
+
+            const savedLang = localStorage.getItem("lang") || "en";
+            setLang(savedLang);
         </script>
+
+        <button class="lang-toggle" onclick="toggleLang()">ES</button>
     </body>
 </html>
  

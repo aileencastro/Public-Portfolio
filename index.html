@@ -15,15 +15,15 @@
             </a>
             <ul class="nav-links">
                 <li class="dropdown">
-                    <a href="/" class="dropbtn active">About</a>
+                    <a href="/" class="dropbtn active" data-en="About" data-es="Sobre Mí">About</a>
                     <ul class="dropdown-content">
-                        <li><a href="#about">About Me</a></li>
-                        <li><a href="#skills">Skills & Technologies</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about" data-en="About Me" data-es="Sobre Mí">About Me</a></li>
+                        <li><a href="#skills" data-en="Skills & Technologies" data-es="Habilidades y Tecnologías">Skills & Technologies</a></li>
+                        <li><a href="#contact" data-en="Contact" data-es="Contacto">Contact</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="/projects/">Projects</a>
+                    <a href="/projects/" data-en="Projects" data-es="Proyectos">Projects</a>
                     <ul class="dropdown-content">
                         <li><a href="/projects/#all">All</a></li>
                         <li><a href="/projects/#network">Computer Networks</a></li>
@@ -216,5 +216,7 @@
         <div class="lightbox" id="lightbox" onclick="closeLightbox()">
             <img src="bio3.jpeg" alt="Photo of Aileen Abril Castro">
         </div>
+        
+        <button class="lang-toggle" onclick="toggleLang()">ES</button>
     </body>
 </html>
