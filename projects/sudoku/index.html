@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css">
+        <title>Sudoku Web App | Aileen Abril Castro</title>
+        <link rel="icon" type="image/png" href="/favicon.PNG">
+    </head>
+    <body>
+        <nav>
+            <a href="/" class="nav-name">
+                <img src="/favicon.PNG" alt="" class="nav-logo">
+                Aileen Abril Castro
+            </a>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="/">About</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/#about">About Me</a></li>
+                        <li><a href="/#skills">Skills & Technologies</a></li>
+                        <li><a href="/#contact">Contact</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/projects/">Projects</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/projects/#all">All</a></li>
+                        <li><a href="/projects/#network">Computer Networks</a></li>
+                        <li><a href="/projects/#cyber">Cybersecurity</a></li>
+                        <li><a href="/projects/#it">IT</a></li>
+                        <li><a href="/projects/#research">Research</a></li>
+                        <li><a href="/projects/#web">Web and Mobile App Development</a></li>
+                        <li><a href="/projects/#3d">3D Computer Graphics</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <a href="/projects/" class="back-link">← Back to Projects</a>
+
+            <h1>Sudoku Web App</h1>
+            <p class="subtitle">An ad-free Sudoku web app with a custom puzzle engine · April 2026</p>
+
+            <div class="project-tags" style="margin-bottom: 2rem;">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Vite</span>
+                <span>Web Workers</span>
+                <span>Puzzle/math logic</span>
+                <span>CSS</span>
+                <span>Pixel Art</span>
+            </div>
+
+            <div class="problem-statement">
+                <p>
+                    Most mobile Sudoku apps interrupt gameplay with ads after every puzzle. I built my 
+                    own: no ads, no interruptions, just puzzles. I used this as a chance to dig into 
+                    the algorithmic side of Sudoku: generating puzzles with controllable difficulty, 
+                    and rating them the way a human solver would. 
+                </p>
+            </div>
+
+            <!-- Screenshot -->
+            <div style="text-align: center;">
+                <div class="image-container">
+                    <img src="sudoku-screenshot.png" class="img-large" alt="Sudoku web app landing page showing the sakura pixel art themed menu" onclick="openLightbox(this.src, this.alt)" style="cursor: pointer;">
+                </div>
+            </div>
+            <p class="project-detail-caption">Landing page with sakura pixel art theme</p>
+
+            <section class="project-detail">
+                <h2>Overview</h2>
+            </section>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <span class="info-label">01 — Tech Stack</span>
+                    <h3>Built with modern tools</h3>
+                    <p>React for the UI, TypeScript for type safety, and Vite for fast development 
+                        builds. Puzzle generation runs in a Web Worker to keep the UI responsive.</p>
+                </div>
+                <div class="info-card">
+                    <span class="info-label">02 — Difficulty System</span>
+                    <h3>Human-style rating</h3>
+                    <p>Developed a seven-technique difficulty rater that evaluates puzzles based 
+                        on the solving strategies required, not just the number of clues removed:
+                        mimicking how a human player would assess difficulty.</p>
+                </div>
+                <div class="info-card">
+                    <span class="info-label">03 — Game Features</span>
+                    <h3>Full game experience</h3>
+                    <p>Includes a pause/resume timer, local scoreboard for tracking best times, 
+                        multiple difficulty levels, and input validation with error highlighting.</p>
+                </div>
+                <div class="info-card">
+                    <span class="info-label">04 — Design</span>
+                    <h3>Sakura pixel art theme</h3>
+                    <p>Custom pixel art aesthetic inspired by Japanese cherry blossom motifs. 
+                        Designed to feel like a retro game while maintaining a clean, modern interface.</p>
+                </div>
+            </div>
+
+            <!-- Demo Video -->
+            <section class="project-detail">
+                <h2>Demo</h2>
+                <div class="video-container">
+                    <video controls playsinline preload="metadata">
+                        <source src="sudoku-demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+
+            <section class="project-detail">
+                <h2>Key Features</h2>
+                <ul class="feature-list">
+                    <li>Puzzle generation powered by Web Workers for non-blocking UI performance</li>
+                    <li>Seven-technique human-style difficulty rater for accurate puzzle grading</li>
+                    <li>Four difficulty levels rated by human solving techniques, not just clue count</li>
+                    <li>Pause-and-resume timer with grid blackout to prevent peeking</li>
+                    <li>Local scoreboard tracking personal records, streaks, and recent times per difficulty</li>
+                    <li>Input validation and real-time error highlighting</li>
+                    <li>Notes mode with pencil-mark candidates per cell</li>
+                    <li>Settings panel with toggles for every gameplay aid (highlighting, errors, auto-clear notes, remaining counts)</li>
+                    <li>Pencil-and-paper "purist mode" that disables all aids for an authentic feel</li>
+                    <li>Optional manual check button as a middle ground between full assistance and purist mode</li>
+                    <li>Unlimited undo with full notes-state restoration</li>
+                    <li>Full keyboard navigation: arrows, 1–9, N for notes, ⌘Z undo, Esc to pause</li>
+                    <li>Responsive layout for desktop and mobile play</li>
+                    <li>Custom sakura pixel art theme with cohesive visual design</li>
+                </ul>
+            </section>
+
+            <section class="project-detail">
+                <h2>Technical Highlights</h2>
+                <p>The difficulty rating system uses seven distinct solving techniques (from naked singles to X-wing patterns) to
+                     classify each puzzle. Rather than simply counting empty cells, the rater analyzes which strategies a human
+                      solver would need, producing more accurate and satisfying difficulty levels.</p>
+                <p>Puzzle generation runs entirely in a Web Worker thread, preventing the main UI from freezing during the 
+                    computationally intensive process of generating and validating new puzzles.</p>
+            </section>
+
+            <!-- <div style="margin-top: 2rem;">
+                <a href="https://github.com/aileencastro/sudoku" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub →</a>
+            </div> -->
+
+            <br>
+            <a href="/projects/" class="back-link">← Back to Projects</a>
+        </main>
+
+        <footer>
+            <img src="/favicon.PNG" alt="" class="footer-logo">
+            <div class="footer-links">
+                <a href="mailto:contact@aileenabrilcastro.com">Email</a>
+                <a href="https://github.com/aileencastro" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/aileencastrog" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+            <p class="footer-credit">© 2026 Aileen Abril Castro</p>
+        </footer>
+
+        <script src="../../script.js"></script>
+
+        <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+            <img src="" alt="">
+        </div>
+    </body>
+</html>
