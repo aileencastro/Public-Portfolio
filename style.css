@@ -1067,8 +1067,8 @@ a.update-card:hover .update-link {
 }
 
 .video-container video {
-    max-width: 100%;
-    max-height: 500px;
+    max-width: 600px;
+    width: 100%;
     border-radius: 6px;
     border: 1px solid rgba(79, 197, 208, 0.15);
 }
