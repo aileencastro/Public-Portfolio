@@ -1167,34 +1167,46 @@ footer {
     position: fixed;
     bottom: 1.5rem;
     right: 1.5rem;
+    display: flex;
+    gap: 0.15rem;
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.72rem;
     letter-spacing: 0.08em;
-    min-width: 90px;
-    color: #5a6270;
     background: rgba(10, 14, 20, 0.85);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(79, 197, 208, 0.15);
-    border-radius: 3px;
-    padding: 0.4rem 0.6rem;
-    cursor: pointer;
-    transition: all 0.3s;
+    border-radius: 4px;
+    padding: 0.2rem;
     z-index: 150;
-    appearance: none;
-    -webkit-appearance: none;
 }
 
-.lang-toggle option {
-    background: #0a0e14;
-    color: #c5cdd8;
+.lang-option {
+    font: inherit;
+    letter-spacing: inherit;
+    color: #5a6270;
+    background: none;
+    border: none;
+    border-radius: 3px;
+    padding: 0.3rem 0.55rem;
+    cursor: pointer;
+    transition: color 0.3s, background 0.3s;
+    text-decoration: none;
+    line-height: 1;
 }
 
-.lang-toggle:hover,
-.lang-toggle:focus {
+.lang-option:hover {
     color: rgb(79, 197, 208);
-    border-color: rgb(79, 197, 208);
-    outline: none;
+}
+
+.lang-option.active {
+    color: #0a0e14;
+    background: rgb(79, 197, 208);
+}
+
+.lang-option:focus-visible {
+    outline: 2px solid rgb(79, 197, 208);
+    outline-offset: 2px;
 }
 
 /* ========== RESPONSIVE ========== */

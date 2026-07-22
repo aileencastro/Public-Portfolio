@@ -116,17 +116,3 @@ document.querySelectorAll(".skill-toggle").forEach(button => {
         setTimeout(syncSkillHeights, 450);
     });
 });
-
-// Language dropdown action
-function setLang(lang) {
-    localStorage.setItem("lang", lang);
-    document.querySelectorAll("[data-en][data-es]").forEach(el => {
-        el.innerHTML = el.getAttribute("data-" + lang);
-    });
-    const select = document.querySelector(".lang-toggle");
-    if (select) select.value = lang;
-}
-
-// Apply saved language on page load
-const savedLang = localStorage.getItem("lang") || "en";
-setLang(savedLang);
