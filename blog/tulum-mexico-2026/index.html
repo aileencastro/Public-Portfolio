@@ -1,15 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="/blog/style.css">
         <title>Tulum, Mexico | Aileen Abril Castro</title>
         <link rel="icon" type="image/png" href="/blog/images/favicon.PNG">
+        <link rel="alternate" hreflang="en" href="https://aileenabrilcastro.com/blog/tulum-mexico-2026/">
+        <link rel="alternate" hreflang="es" href="https://aileenabrilcastro.com/blog/es/tulum-mexico-2026/">
+        <link rel="alternate" hreflang="x-default" href="https://aileenabrilcastro.com/blog/tulum-mexico-2026/">
     </head>
     <body>
         <nav class="blog-nav">
-            <a href="/blog/" class="blog-nav-name">Aileen Abril Castro</a>
+            <a href="/blog/" class="blog-nav-name">
+                <img src="/blog/images/favicon.PNG" alt="Aileen Abril Castro logo of double headed Aztec snake" class="nav-logo">
+                Aileen Abril Castro
+            </a>
+            <ul class="blog-nav-links">
+                <li><a href="/blog/#posts" class="active">Blog</a></li>
+                <li><a href="/blog/#photography">Photography</a></li>
+                <li><a href="/blog/#art">Art</a></li>
+                <li><a href="/blog/#more">More</a></li>
+            </ul>
         </nav>
 
         <article class="blog-post">
@@ -20,7 +32,7 @@
             <header class="post-header">
                 <span class="post-date">April 2026</span>
                 <h1 class="post-title">Travel: Tulum, Quintana Roo, Mexico</h1>
-                <p class="post-subtitle">Four days exploring ancient ruins, cenotes, and the living culture of the Yucatán Peninsula</p>
+                <p class="post-subtitle">Four days exploring ancient ruins, cenotes, and the history of the Yucatán Peninsula</p>
             </header>
 
             <div class="post-tabs">
@@ -260,6 +272,11 @@
         <div class="blog-lightbox" id="blogLightbox" onclick="closeBlogLightbox()">
             <img src="" alt="">
         </div>
+
+        <select class="lang-toggle" aria-label="Language" onchange="window.location.href = this.value">
+            <option value="/blog/tulum-mexico-2026/" selected>English</option>
+            <option value="/blog/es/tulum-mexico-2026/">Español</option>
+        </select>
 
         <script>
             // Post section tabs
