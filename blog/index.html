@@ -379,26 +379,24 @@
                 if (e.key === "Escape") closeBlogLightbox();
             });
 
-            function toggleLang() {
-                const current = localStorage.getItem("lang") || "en";
-                const newLang = current === "en" ? "es" : "en";
-                setLang(newLang);
-            }
-
+            // Language dropdown action
             function setLang(lang) {
                 localStorage.setItem("lang", lang);
                 document.querySelectorAll("[data-en][data-es]").forEach(el => {
                     el.innerHTML = el.getAttribute("data-" + lang);
                 });
-                const btn = document.querySelector(".lang-toggle");
-                if (btn) btn.textContent = lang === "en" ? "ES" : "EN";
+                const select = document.querySelector(".lang-toggle");
+                if (select) select.value = lang;
             }
 
             const savedLang = localStorage.getItem("lang") || "en";
             setLang(savedLang);
         </script>
 
-        <button class="lang-toggle" onclick="toggleLang()">ES</button>
+        <select class="lang-toggle" onchange="setLang(this.value)">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+        </select>
     </body>
 </html>
  

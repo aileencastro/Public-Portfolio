@@ -786,20 +786,24 @@ a.trip-day-title:hover {
     font-size: 0.72rem;
     letter-spacing: 0.08em;
     color: #999;
-    background: rgba(250, 249, 247, 0.9);
+    background: rgba(250, 249, 247, 0.95);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid #e8e6e1;
     border-radius: 3px;
-    padding: 0.4rem 0.75rem;
+    padding: 0.4rem 0.6rem;
     cursor: pointer;
     transition: all 0.3s;
     z-index: 150;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
-.lang-toggle:hover {
+.lang-toggle:hover,
+.lang-toggle:focus {
     color: #2c2c2c;
     border-color: #2c2c2c;
+    outline: none;
 }
 
 /* ========== RESPONSIVE ========== */

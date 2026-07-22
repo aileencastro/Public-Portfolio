@@ -1170,21 +1170,31 @@ footer {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.72rem;
     letter-spacing: 0.08em;
+    min-width: 90px;
     color: #5a6270;
     background: rgba(10, 14, 20, 0.85);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(79, 197, 208, 0.15);
     border-radius: 3px;
-    padding: 0.4rem 0.75rem;
+    padding: 0.4rem 0.6rem;
     cursor: pointer;
     transition: all 0.3s;
     z-index: 150;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
-.lang-toggle:hover {
+.lang-toggle option {
+    background: #0a0e14;
+    color: #c5cdd8;
+}
+
+.lang-toggle:hover,
+.lang-toggle:focus {
     color: rgb(79, 197, 208);
     border-color: rgb(79, 197, 208);
+    outline: none;
 }
 
 /* ========== RESPONSIVE ========== */

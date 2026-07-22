@@ -117,26 +117,16 @@ document.querySelectorAll(".skill-toggle").forEach(button => {
     });
 });
 
-// Language toggle
-function toggleLang() {
-    const current = localStorage.getItem("lang") || "en";
-    const newLang = current === "en" ? "es" : "en";
-    setLang(newLang);
-}
-
+// Language dropdown action
 function setLang(lang) {
     localStorage.setItem("lang", lang);
-
     document.querySelectorAll("[data-en][data-es]").forEach(el => {
         el.innerHTML = el.getAttribute("data-" + lang);
     });
-
-    const btn = document.querySelector(".lang-toggle");
-    if (btn) btn.textContent = lang === "en" ? "ES" : "EN";
+    const select = document.querySelector(".lang-toggle");
+    if (select) select.value = lang;
 }
 
 // Apply saved language on page load
-document.addEventListener("DOMContentLoaded", () => {
-    const saved = localStorage.getItem("lang") || "en";
-    setLang(saved);
-});
+const savedLang = localStorage.getItem("lang") || "en";
+setLang(savedLang);
