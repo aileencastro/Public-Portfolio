@@ -798,6 +798,20 @@ a.trip-day-title:hover {
         gap: 0.75rem;
         padding: 1rem 1.5rem;
     }
+    
+    .blog-nav-name {
+        font-size: 1.3rem;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .nav-logo {
+        height: 36px;
+        margin-right: 0;
+        top: 0;
+    }
 
     .blog-nav-links {
         gap: 1.2rem;
