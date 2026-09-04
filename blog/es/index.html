@@ -28,7 +28,7 @@
             <!-- ========== BLOG ========== -->
             <div class="blog-section active" id="section-posts">
                 <div class="posts-scatter">
-                    <img src="/blog/images/mayan-hug.PNG" alt="" class="scatter-deco" style="top: 5%; right: 8%;">
+                    <img src="/blog/images/cdmx-dessert.PNG" alt="Ilustración de postre de Rosetta Cafe" class="scatter-deco" style="top: 16%; right: 88%;">
 
                     <a class="blog-post-preview scatter-card" style="margin-left: 5%; transform: rotate(-1.2deg);">
                         <span class="blog-post-date"> </span>
@@ -36,7 +36,16 @@
                         <p>¡Pronto habrá más! Mantente al pendiente para leer sobre tecnología, viajes y todo lo entre medio.</p>
                     </a>
 
-                    <img src="/blog/images/mexican-shell.PNG" alt="Ilustración de un caracol mexicano" class="scatter-deco" style="bottom: 10%; left: 60%;">
+                    <img src="/blog/images/nyc-sonny.PNG" alt="Ángel de NYC con brillantes" class="scatter-deco" style="bottom: 40%; left: 90%;">
+
+                    <a href="/blog/es/chicago-newyork-2026/" class="blog-post-preview scatter-card" style="margin-left: 50%; transform: rotate(-1.4deg);">
+                        <span class="blog-post-date">Agosto 2026</span>
+                        <h3>Apple y Nueva York</h3>
+                        <p>Presentando mi app en Apple, tornados y blowouts de $30 en Chicago y NYC.</p>
+                        <span class="blog-post-read">Leer &rsaquo;</span>
+                    </a>
+
+                    <img src="/blog/images/cdmx-shell.PNG" alt="Ilustración de un caracol mexicano" class="scatter-deco" style="bottom: 10%; left: 60%;">
 
                     <a href="/blog/es/tulum-mexico-2026/" class="blog-post-preview scatter-card" style="margin-left: 35%; transform: rotate(0.8deg);">
                         <span class="blog-post-date">Abril 2026</span>
@@ -45,22 +54,28 @@
                         <span class="blog-post-read">Leer &rsaquo;</span>
                     </a>
 
-                    <!-- Agrega más tarjetas de entradas e imágenes decorativas, ajustando el margen y la rotación según necesites -->
-                    <!-- Ejemplo de una futura entrada con una imagen decorativa cerca:
-                    <img src="/blog/images/another-cute.png" alt="" class="scatter-deco" style="bottom: 10%; left: 60%;">
-                    <a href="/blog/coming-soon/" class="blog-post-preview scatter-card" style="margin-left: 40%; transform: rotate(0.8deg);">
-                        <span class="blog-post-date">Junio 2026</span>
-                        <h3>Título de otra entrada</h3>
-                        <p>Texto de vista previa aquí...</p>
-                        <span class="blog-post-read">Leer &rsaquo;</span>
-                    </a>
-                    -->
                 </div>
             </div>
 
             <!-- ========== FOTOGRAFÍA ========== -->
             <div class="blog-section" id="section-photography">
                 <div class="insta-grid">
+                    <div class="insta-item">
+                        <img src="/blog/images/chicago-2026.JPG" alt="Edificios del río Chicago por la mañana" onclick="openBlogLightbox(this.src, this.alt, this.parentElement.querySelector('.insta-link').href)">
+                        <a href="https://www.instagram.com/sirenaslighthouse/p/DcOxQ7amqIh/" class="insta-link" hidden></a>
+                        <div class="insta-overlay" onclick="event.stopPropagation(); openBlogLightbox(this.parentElement.querySelector('img').src, this.parentElement.querySelector('img').alt, this.parentElement.querySelector('.insta-link').href)">
+                            <span class="insta-view-btn">Ver más &rsaquo;</span>
+                        </div>
+                    </div>
+                    
+                    <div class="insta-item">
+                        <img src="/blog/images/newyork-2026.JPG" alt="Puesto de frutas de Brooklyn, Nueva York, por la noche." onclick="openBlogLightbox(this.src, this.alt, this.parentElement.querySelector('.insta-link').href)">
+                        <a href="https://www.instagram.com/sirenaslighthouse/p/DcIXc8ilBLP/" class="insta-link" hidden></a>
+                        <div class="insta-overlay" onclick="event.stopPropagation(); openBlogLightbox(this.parentElement.querySelector('img').src, this.parentElement.querySelector('img').alt, this.parentElement.querySelector('.insta-link').href)">
+                            <span class="insta-view-btn">Ver más &rsaquo;</span>
+                        </div>
+                    </div>
+
                     <div class="insta-item">
                         <img src="/blog/images/26.jpg" alt="Arquitectura rosa de Babel Tulum entre follaje verde" onclick="openBlogLightbox(this.src, this.alt, this.parentElement.querySelector('.insta-link').href)">
                         <a href="https://www.instagram.com/p/DY0KBlGkitZ/" class="insta-link" hidden></a>

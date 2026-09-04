@@ -339,6 +339,15 @@ html {
     margin-bottom: 1rem;
 }
 
+.post-body h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #2c2c2c;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
 .post-body p {
     font-family: 'DM Sans', sans-serif;
     color: #555;
