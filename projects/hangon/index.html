@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css">
+        <title>HangOn | Aileen Abril Castro</title>
+        <link rel="icon" type="image/png" href="/favicon.PNG">
+    </head>
+    <body>
+        <nav>
+            <a href="/" class="nav-name">
+                <img src="/favicon.PNG" alt="Aileen Abril Castro logo" class="nav-logo">
+                Aileen Abril Castro
+            </a>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="/">About</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/#about">About Me</a></li>
+                        <li><a href="/#skills">Skills & Technologies</a></li>
+                        <li><a href="/#contact">Contact</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/projects/">Projects</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/projects/#all">All</a></li>
+                        <li><a href="/projects/#network">Computer Networks</a></li>
+                        <li><a href="/projects/#cyber">Cybersecurity</a></li>
+                        <li><a href="/projects/#it">IT</a></li>
+                        <li><a href="/projects/#research">Research</a></li>
+                        <li><a href="/projects/#web">Web and Mobile App Development</a></li>
+                        <li><a href="/projects/#3d">3D Computer Graphics</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <a href="/projects/" class="back-link">← Back to Projects</a>
+
+            <div class="title-with-logo">
+                <h1>HangOn iOS Mobile App</h1>
+                <img src="/blog/images/hangon-logo.JPG" alt="HangOn app logo" class="title-logo" style="height: 50px; opacity: 1; border-radius: 10px;">
+            </div>
+            <p class="subtitle">Swift · iOS · Xcode · Kode With Klossy · August 2026</p>
+
+            <div class="project-tags" style="margin-bottom: 2rem;">
+                <span>Swift</span>
+                <span>iOS</span>
+                <span>Xcode</span>
+                <span>Keynote</span>
+                <span>Kode With Klossy</span>
+                <span>Apple</span>
+                <span>Sustainability</span>
+            </div>
+
+            <div class="problem-statement">
+                <p>
+                    HangOn is a sustainability and digital closet iOS app that helps users be more intentional about 
+                    what they own, what they wear, and what they don't need to buy new. Selected as a finalist 
+                    in the Kode With Klossy mobile app challenge and presented live at the Apple Store on 
+                    Michigan Avenue in Chicago, Illinois.
+                </p>
+            </div>
+
+            <!-- App screenshots -->
+            <div class="step-images" style="margin-bottom: 0;">
+                <div>
+                    <img src="hangon-screen1.PNG" alt="HangOn app home screen" class="img-small" onclick="openLightbox(this.src, this.alt)">
+                    <p class="step-image-label">Home</p>
+                </div>
+                <div>
+                    <img src="hangon-closet.png" alt="HangOn app closet view" class="img-small" onclick="openLightbox(this.src, this.alt)">
+                    <p class="step-image-label">Closet</p>
+                </div>
+                <div>
+                    <img src="hangon-screen3.PNG" alt="HangOn app outfit builder" class="img-small" onclick="openLightbox(this.src, this.alt)">
+                    <p class="step-image-label">Outfits</p>
+                </div>
+            </div>
+            <p class="project-detail-caption" style="margin-top: 0.5rem;">App screenshots</p>
+
+            <section class="project-detail">
+                <h2>Overview</h2>
+            </section>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <span class="info-label">01 — Inspiration</span>
+                    <h3>From Clueless to code</h3>
+                    <p>Inspired by Cher's iconic virtual closet from the Y2K film <em>Clueless</em>, HangOn brings that vision to life as a real, functional iOS app — built with a modern sustainability lens.</p>
+                </div>
+                <div class="info-card">
+                    <span class="info-label">02 — Tech Stack</span>
+                    <h3>Swift & SwiftUI</h3>
+                    <p>Built natively in Swift using SwiftUI for the interface and Xcode as the development environment. A full-circle moment — Swift was one of the first languages I learned at Kode With Klossy.</p>
+                </div>
+                <div class="info-card">
+                    <span class="info-label">03 — Sustainability</span>
+                    <h3>Intentional fashion</h3>
+                    <p>HangOn helps users track what they own, identify what they actually wear, and make more conscious decisions before buying new. The goal is to reduce fashion waste one closet at a time.</p>
+                </div>
+                <div class="info-card">
+                    <span class="info-label">04 — Recognition</span>
+                    <h3>Apple Store finalist</h3>
+                    <p>Selected as a Kode With Klossy finalist and invited to present HangOn live at the Apple Store on Michigan Avenue in Chicago — in front of Apple staff, mentors, and a live audience.</p>
+                </div>
+            </div>
+
+            <!-- Presentation photos -->
+            <section class="project-detail">
+                <h2>Presenting at Apple</h2>
+                <div class="step-images">
+                    <div>
+                        <img src="apple-michiganave.JPG" alt="Apple Store Michigan Avenue Chicago" class="img-small" onclick="openLightbox(this.src, this.alt)">
+                        <p class="step-image-label">Apple Michigan Ave</p>
+                    </div>
+                    <div>
+                        <img src="apple-hangon.JPEG" alt="Presenting HangOn at Apple" class="img-small" onclick="openLightbox(this.src, this.alt)">
+                        <p class="step-image-label">Presenting</p>
+                    </div>
+                    <div>
+                        <img src="kwk-team.HEIC" alt="Kode With Klossy team at Apple" class="img-small" onclick="openLightbox(this.src, this.alt)">
+                        <p class="step-image-label">KWK team</p>
+                    </div>
+                </div>
+                <!-- Demo video -->
+                <h2>App Demo</h2>
+                <div class="video-container">
+                    <video controls playsinline preload="metadata" style="max-width: 300px;"">
+                        <source src="hangon-demo.mov" type="video/mp4">
+                    </video>
+                </div>
+
+                <!-- Keynote slideshow -->
+                <h2>Pitch Deck</h2>
+                <div style="display: flex; justify-content: center;">
+                    <div class="slideshow-container">
+                        <button class="slide-btn prev" onclick="changeSlide(-1)">&#8592;</button>
+                        <canvas id="slideCanvas"></canvas>
+                        <button class="slide-btn next" onclick="changeSlide(1)">&#8594;</button>
+                        <p class="slide-counter"><span id="currentSlide">1</span> / <span id="totalSlides">—</span></p>
+                    </div>
+                </div>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+                <script>
+                    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+                    let pdfDoc = null;
+                    let currentPage = 1;
+
+                    pdfjsLib.getDocument('hangon-keynote.pdf').promise.then(pdf => {
+                        pdfDoc = pdf;
+                        document.getElementById('totalSlides').textContent = pdf.numPages;
+                        renderSlide(currentPage);
+                    });
+
+                    function renderSlide(pageNum) {
+                        pdfDoc.getPage(pageNum).then(page => {
+                            const canvas = document.getElementById('slideCanvas');
+                            const ctx = canvas.getContext('2d');
+                            const viewport = page.getViewport({ scale: 0.4 });
+                            canvas.width = viewport.width;
+                            canvas.height = viewport.height;
+                            page.render({ canvasContext: ctx, viewport });
+                            document.getElementById('currentSlide').textContent = pageNum;
+                        });
+                    }
+
+                    function changeSlide(dir) {
+                        const newPage = currentPage + dir;
+                        if (newPage < 1 || newPage > pdfDoc.numPages) return;
+                        currentPage = newPage;
+                        renderSlide(currentPage);
+                    }
+                </script>
+            </section>
+
+            <section class="project-detail">
+                <h2>Key Features</h2>
+                <ul class="feature-list">
+                    <li>Digital closet to catalog and organize clothing items</li>
+                    <li>Outfit builder to plan and save outfit combinations</li>
+                    <li>Wear tracking to identify underused items in your wardrobe</li>
+                    <li>Sustainability insights to encourage mindful shopping habits</li>
+                    <li>Clean, intuitive SwiftUI interface designed for everyday use</li>
+                </ul>
+            </section>
+
+            <section class="project-detail">
+                <h2>Background</h2>
+                <p>The idea for HangOn started years before this version existed. When I first learned to code, I wanted to build my own version of Cher's virtual closet from <em>Clueless</em>. In college, I built a prototype web app for a class project. When the Kode With Klossy mobile app challenge came around, I knew it was the moment to finally build the mobile version — the one I'd actually use every day.</p>
+                <p>Building it in Swift was a full-circle moment. Swift was one of the first languages I was ever introduced to, back at my very first Kode With Klossy camp. Coming back to it years later, building a full iOS app entirely on my own, felt like tangible proof of how far I've come since that first summer I learned what a variable was.</p>
+            </section>
+
+            <section class="project-detail">
+                <h2>What's Next</h2>
+                <p>HangOn is currently in active development. Future implementations include backend integration for cloud storage, user authentication, and social features — all with the goal of preparing it for a full App Store launch and real-world use by a broader audience.</p>
+            </section>
+
+            <p class="trademark-note">Kode With Klossy is a registered trademark of Kode With Klossy, Inc. HangOn was created independently as part of the KWK alumni app challenge.</p>
+
+            <br>
+            <a href="/projects/" class="back-link">← Back to Projects</a>
+        </main>
+
+        <footer>
+            <img src="/favicon.PNG" alt="" class="footer-logo">
+            <div class="footer-links">
+                <a href="mailto:contact@aileenabrilcastro.com">Email</a>
+                <a href="https://github.com/aileencastro" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/aileencastrog" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+            <p class="footer-credit">© 2026 Aileen Abril Castro</p>
+        </footer>
+
+        <script src="../../script.js"></script>
+
+        <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+            <img src="" alt="">
+        </div>
+
+        <select class="lang-toggle" aria-label="Language" onchange="setLang(this.value)">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+        </select>
+    </body>
+</html>

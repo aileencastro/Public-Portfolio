@@ -842,6 +842,125 @@ a.update-card:hover .update-link {
     margin-bottom: 3rem;
 }
 
+/* ========== MEDIA LIGHTBOX ========== */
+.media-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.92);
+    z-index: 300;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-lightbox.open {
+    display: flex;
+}
+
+.media-lightbox-inner {
+    position: relative;
+    width: 90vw;
+    max-width: 1000px;
+    background: #0a0e14;
+    border: 1px solid rgba(79, 197, 208, 0.15);
+    border-radius: 6px;
+    padding: 2.5rem 1.5rem 1.5rem;
+}
+
+.media-lightbox-close {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: #5a6270;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'JetBrains Mono', monospace;
+    transition: color 0.3s;
+}
+
+.media-lightbox-close:hover {
+    color: rgb(79, 197, 208);
+}
+
+#mediaLightboxContent video {
+    width: 100%;
+    border-radius: 4px;
+}
+
+#mediaLightboxContent canvas {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.expand-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    color: rgba(79, 197, 208, 0.6);
+    background: none;
+    border: 1px solid rgba(79, 197, 208, 0.15);
+    border-radius: 3px;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 0.5rem;
+}
+
+.expand-btn:hover {
+    color: rgb(79, 197, 208);
+    border-color: rgb(79, 197, 208);
+}
+
+/* ========== SLIDESHOW ========== */
+.slideshow-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem auto;
+    gap: 1rem;
+    max-width: 600px;
+}
+
+#slideCanvas {
+    max-width: 100%;
+    border-radius: 6px;
+    border: 1px solid rgba(79, 197, 208, 0.15);
+}
+
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(10, 14, 20, 0.85);
+    border: 1px solid rgba(79, 197, 208, 0.2);
+    color: rgb(79, 197, 208);
+    font-size: 1.2rem;
+    padding: 0.5rem 0.9rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+.slide-btn.prev { left: 0; }
+.slide-btn.next { right: 0; }
+
+.slide-btn:hover {
+    background: rgba(79, 197, 208, 0.1);
+    border-color: rgb(79, 197, 208);
+}
+
+.slide-counter {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: #5a6270;
+    letter-spacing: 0.06em;
+}
+
 /* ========== BEFORE / AFTER ========== */
 .before-after {
     display: flex;
