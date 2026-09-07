@@ -42,9 +42,9 @@
 
             <div class="title-with-logo">
                 <h1>HangOn iOS Mobile App</h1>
-                <img src="/blog/images/hangon-logo.JPG" alt="HangOn app logo" class="title-logo" style="height: 50px; opacity: 1; border-radius: 10px;">
+                <img src="/blog/images/hangon-logo.JPG" alt="HangOn app logo" class="title-logo" style="height: 100px; opacity: 1; border-radius: 10px;">
             </div>
-            <p class="subtitle">Swift · iOS · Xcode · Kode With Klossy · August 2026</p>
+            <p class="subtitle">Mobile app developed in Swift for virtual management of your closet  · August 2026</p>
 
             <div class="project-tags" style="margin-bottom: 2rem;">
                 <span>Swift</span>
@@ -68,7 +68,7 @@
             <!-- App screenshots -->
             <div class="step-images" style="margin-bottom: 0;">
                 <div>
-                    <img src="hangon-screen1.PNG" alt="HangOn app home screen" class="img-small" onclick="openLightbox(this.src, this.alt)">
+                    <img src="hangon-home.png" alt="HangOn app home screen" class="img-small" onclick="openLightbox(this.src, this.alt)">
                     <p class="step-image-label">Home</p>
                 </div>
                 <div>
@@ -76,7 +76,7 @@
                     <p class="step-image-label">Closet</p>
                 </div>
                 <div>
-                    <img src="hangon-screen3.PNG" alt="HangOn app outfit builder" class="img-small" onclick="openLightbox(this.src, this.alt)">
+                    <img src="hangon-outfit.png" alt="HangOn app outfit builder" class="img-small" onclick="openLightbox(this.src, this.alt)">
                     <p class="step-image-label">Outfits</p>
                 </div>
             </div>
@@ -90,39 +90,51 @@
                 <div class="info-card">
                     <span class="info-label">01 — Inspiration</span>
                     <h3>From Clueless to code</h3>
-                    <p>Inspired by Cher's iconic virtual closet from the Y2K film <em>Clueless</em>, HangOn brings that vision to life as a real, functional iOS app — built with a modern sustainability lens.</p>
+                    <p>
+                        Inspired by Cher's iconic virtual closet from the Y2K film <em>Clueless</em>, HangOn brings that 
+                        vision to life as a real, functional iOS app, built with a sustainability lens as well.
+                    </p>
                 </div>
                 <div class="info-card">
                     <span class="info-label">02 — Tech Stack</span>
-                    <h3>Swift & SwiftUI</h3>
-                    <p>Built natively in Swift using SwiftUI for the interface and Xcode as the development environment. A full-circle moment — Swift was one of the first languages I learned at Kode With Klossy.</p>
+                    <h3>Swift & XCode</h3>
+                    <p>
+                        Built natively in Swift using SwiftUI for the interface and Xcode as the development environment. 
+                        A full-circle moment: Swift was one of the first coding languages I learned at Kode With Klossy.
+                    </p>
                 </div>
                 <div class="info-card">
                     <span class="info-label">03 — Sustainability</span>
                     <h3>Intentional fashion</h3>
-                    <p>HangOn helps users track what they own, identify what they actually wear, and make more conscious decisions before buying new. The goal is to reduce fashion waste one closet at a time.</p>
+                    <p>
+                        HangOn helps users track what they own, identify what they actually wear, and make more conscious 
+                        decisions before buying new. The goal is to reduce fashion waste one closet at a time.
+                    </p>
                 </div>
                 <div class="info-card">
                     <span class="info-label">04 — Recognition</span>
                     <h3>Apple Store finalist</h3>
-                    <p>Selected as a Kode With Klossy finalist and invited to present HangOn live at the Apple Store on Michigan Avenue in Chicago — in front of Apple staff, mentors, and a live audience.</p>
+                    <p>
+                        Selected as a Kode With Klossy finalist and invited to present HangOn live at the Apple Store on Michigan Avenue 
+                        in Chicago: in front of Apple staff, mentors, and a live audience.
+                    </p>
                 </div>
             </div>
 
             <!-- Presentation photos -->
             <section class="project-detail">
                 <h2>Presenting at Apple</h2>
-                <div class="step-images">
+                <div class="step-images" style="align-items: flex-start;">
                     <div>
-                        <img src="apple-michiganave.JPG" alt="Apple Store Michigan Avenue Chicago" class="img-small" onclick="openLightbox(this.src, this.alt)">
+                        <img src="apple-michiganave.JPG" alt="Apple Store Michigan Avenue Chicago" class="img-small" onclick="openLightbox(this.src, this.alt)" style="width: 220px; height: 220px; object-fit: cover;">
                         <p class="step-image-label">Apple Michigan Ave</p>
                     </div>
                     <div>
-                        <img src="apple-hangon.JPEG" alt="Presenting HangOn at Apple" class="img-small" onclick="openLightbox(this.src, this.alt)">
+                        <img src="apple-hangon.JPEG" alt="Presenting HangOn at Apple" class="img-small" onclick="openLightbox(this.src, this.alt)" style="width: 220px; height: 220px; object-fit: cover;">
                         <p class="step-image-label">Presenting</p>
                     </div>
                     <div>
-                        <img src="kwk-team.HEIC" alt="Kode With Klossy team at Apple" class="img-small" onclick="openLightbox(this.src, this.alt)">
+                        <img src="kwk-team.HEIC" alt="Kode With Klossy team at Apple" class="img-small" onclick="openLightbox(this.src, this.alt)" style="width: 220px; height: 220px; object-fit: cover;">
                         <p class="step-image-label">KWK team</p>
                     </div>
                 </div>
@@ -184,6 +196,7 @@
                 <ul class="feature-list">
                     <li>Digital closet to catalog and organize clothing items</li>
                     <li>Outfit builder to plan and save outfit combinations</li>
+                    <li>Randomizer button that lets the app style you</li>
                     <li>Wear tracking to identify underused items in your wardrobe</li>
                     <li>Sustainability insights to encourage mindful shopping habits</li>
                     <li>Clean, intuitive SwiftUI interface designed for everyday use</li>
@@ -192,13 +205,27 @@
 
             <section class="project-detail">
                 <h2>Background</h2>
-                <p>The idea for HangOn started years before this version existed. When I first learned to code, I wanted to build my own version of Cher's virtual closet from <em>Clueless</em>. In college, I built a prototype web app for a class project. When the Kode With Klossy mobile app challenge came around, I knew it was the moment to finally build the mobile version — the one I'd actually use every day.</p>
-                <p>Building it in Swift was a full-circle moment. Swift was one of the first languages I was ever introduced to, back at my very first Kode With Klossy camp. Coming back to it years later, building a full iOS app entirely on my own, felt like tangible proof of how far I've come since that first summer I learned what a variable was.</p>
+                <p>
+                    The idea for HangOn started years before this version existed. When I first learned to code,
+                    I wanted to build my own version of Cher's virtual closet from <em>Clueless</em>. In college, 
+                    I built a prototype web app for a class project. When the Kode With Klossy mobile app challenge 
+                    came around, I knew it was the moment to finally build the mobile version: the one I'd actually use every day.
+                </p>
+                <p>
+                    Building it in Swift was a full-circle moment. Swift was one of the first languages I was ever introduced to, 
+                    back at my very first Kode With Klossy camp. Coming back to it years later, building a full iOS app entirely 
+                    on my own, felt like tangible proof of how far I've come since that first summer I learned what software development
+                    looked like.
+                </p>
             </section>
 
             <section class="project-detail">
                 <h2>What's Next</h2>
-                <p>HangOn is currently in active development. Future implementations include backend integration for cloud storage, user authentication, and social features — all with the goal of preparing it for a full App Store launch and real-world use by a broader audience.</p>
+                <p>
+                    HangOn is currently in active development. Future implementations include backend integration for cloud storage, 
+                    user authentication, and meeting Apple's HCI guidelines. Along with the goal of preparing it for a full App Store 
+                    launch and real-world use by a broader audience.
+                </p>
             </section>
 
             <p class="trademark-note">Kode With Klossy is a registered trademark of Kode With Klossy, Inc. HangOn was created independently as part of the KWK alumni app challenge.</p>
