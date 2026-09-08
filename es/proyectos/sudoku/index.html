@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../../style.css">
+        <title>App Web de Sudoku | Aileen Abril Castro</title>
+        <link rel="icon" type="image/png" href="/favicon.PNG">
+        <link rel="alternate" hreflang="en" href="https://aileenabrilcastro.com/projects/sudoku/">
+        <link rel="alternate" hreflang="es" href="https://aileenabrilcastro.com/es/proyectos/sudoku/">
+        <link rel="alternate" hreflang="x-default" href="https://aileenabrilcastro.com/projects/sudoku/">
+    </head>
+    <body>
+        <nav>
+            <a href="/es/" class="nav-name">
+                <img src="/favicon.PNG" alt="Logo de Aileen Abril Castro" class="nav-logo">
+                Aileen Abril Castro
+            </a>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="/es/">Inicio</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/es/#about">Sobre Mí</a></li>
+                        <li><a href="/es/#skills">Habilidades y Tecnologías</a></li>
+                        <li><a href="/es/#contact">Contacto</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/es/proyectos/" class="active">Proyectos</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/es/proyectos/#all">Todos</a></li>
+                        <li><a href="/es/proyectos/#network">Redes de Computadoras</a></li>
+                        <li><a href="/es/proyectos/#cyber">Ciberseguridad</a></li>
+                        <li><a href="/es/proyectos/#it">IT</a></li>
+                        <li><a href="/es/proyectos/#research">Investigación</a></li>
+                        <li><a href="/es/proyectos/#web">Desarrollo Web y Móvil</a></li>
+                        <li><a href="/es/proyectos/#3d">Gráficos 3D</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <a href="/es/proyectos/" class="back-link">← Regresar a Proyectos</a>
+
+            <h1>Sudoku Aplicación Web</h1>
+            <p class="subtitle">Una aplicación web de Sudoku sin anuncios con un motor de rompecabezas personalizado · Abril 2026</p>
+
+            <div class="project-tags" style="margin-bottom: 2rem;">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Vite</span>
+                <span>Web Workers</span>
+                <span>CSS</span>
+                <span>Pixel Art</span>
+            </div>
+
+            <div class="problem-statement">
+                <p>
+                    Construí una aplicación web completa de Sudoku desde cero como proyecto de portafolio,
+                    con generación de puzzles usando un sistema de calificación de dificultad estilo humano,
+                    un diseño de pixel art con tema sakura, y una experiencia de juego completa con temporizador,
+                    marcador y múltiples niveles de dificultad.
+                </p>
+            </div>
+
+            <div style="text-align: center;">
+                <div class="image-container" style="margin-bottom: 0;">
+                    <img src="/projects/sudoku/sudoku-screenshot.png" class="img-large" alt="Pantalla de inicio de la app web de Sudoku con tema de pixel art sakura" onclick="openLightbox(this.src, this.alt)" style="cursor: pointer;">
+                </div>
+            </div>
+            <p class="project-detail-caption">Pantalla de inicio con tema de pixel art sakura</p>
+
+            <section class="project-detail">
+                <h2>Descripción General</h2>
+            </section>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <span class="info-label">01 — Stack Tecnológico</span>
+                    <h3>Construido con herramientas modernas</h3>
+                    <p>React para la interfaz, TypeScript para la seguridad de tipos, y Vite para builds de desarrollo rápidos. La generación de puzzles corre en un Web Worker para mantener la interfaz responsiva.</p>
+                </div>
+                <div class="info-card">
+                    <span class="info-label">02 — Sistema de Dificultad</span>
+                    <h3>Calificación estilo humano</h3>
+                    <p>Desarrollé un calificador de dificultad de siete técnicas que evalúa los puzzles basándose en las estrategias de resolución requeridas, no solo en el número de celdas eliminadas, imitando cómo un jugador humano evaluaría la dificultad.</p>
+                </div>
+                <div class="info-card">
+                    <span class="info-label">03 — Funcionalidades</span>
+                    <h3>Experiencia de juego completa</h3>
+                    <p>Incluye temporizador de pausa/reanudación, marcador local para registrar mejores tiempos, múltiples niveles de dificultad y validación de entrada con resaltado de errores.</p>
+                </div>
+                <div class="info-card">
+                    <span class="info-label">04 — Diseño</span>
+                    <h3>Tema de pixel art sakura</h3>
+                    <p>Estética de pixel art personalizada inspirada en los motivos de flor de cerezo japonesa. Diseñado para sentirse como un juego retro mientras mantiene una interfaz limpia y moderna.</p>
+                </div>
+            </div>
+
+            <section class="project-detail">
+                <h2>Demo</h2>
+                <div class="video-container">
+                    <video controls playsinline preload="metadata" style="max-width: 400px;">
+                        <source src="/projects/sudoku/sudoku-demo.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+            </section>
+
+            <section class="project-detail">
+                <h2>Características Principales</h2>
+                <ul class="feature-list">
+                    <li>Generación de puzzles con Web Workers para rendimiento de interfaz sin bloqueos</li>
+                    <li>Calificador de dificultad estilo humano de siete técnicas para clasificación precisa de puzzles</li>
+                    <li>Temporizador de pausa y reanudación con preservación del estado del juego</li>
+                    <li>Marcador local que registra los mejores tiempos de completación por dificultad</li>
+                    <li>Tema de pixel art sakura personalizado con diseño visual cohesivo</li>
+                    <li>Diseño responsivo para jugar en escritorio y móvil</li>
+                    <li>Validación de entrada y resaltado de errores en tiempo real</li>
+                </ul>
+            </section>
+
+            <section class="project-detail">
+                <h2>Aspectos Técnicos Destacados</h2>
+                <p>El sistema de calificación de dificultad usa siete técnicas de resolución distintas — desde singles desnudos hasta patrones de ala en X — para clasificar cada puzzle. En lugar de simplemente contar celdas vacías, el calificador analiza qué estrategias necesitaría un solucionador humano, produciendo niveles de dificultad más precisos y satisfactorios.</p>
+                <p>La generación de puzzles corre completamente en un hilo de Web Worker, evitando que la interfaz principal se congele durante el proceso computacionalmente intensivo de generar y validar nuevos puzzles.</p>
+            </section>
+
+            <!-- <div style="margin-top: 2rem;">
+                <a href="https://github.com/aileencastro/sudoku" target="_blank" rel="noopener noreferrer" class="project-link">Ver en GitHub →</a>
+            </div> -->
+
+            <br>
+            <a href="/es/proyectos/" class="back-link">← Regresar a Proyectos</a>
+        </main>
+
+        <footer>
+            <img src="/favicon.PNG" alt="Logo de Aileen Abril Castro" class="footer-logo">
+            <div class="footer-links">
+                <a href="mailto:contact@aileenabrilcastro.com">Correo</a>
+                <a href="https://github.com/aileencastro" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/aileencastrog" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+            <p class="footer-credit">© 2026 Aileen Abril Castro</p>
+        </footer>
+
+        <script src="../../../script.js"></script>
+
+        <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+            <img src="" alt="">
+        </div>
+
+        <div class="lang-toggle" role="group" aria-label="Idioma">
+            <a href="/projects/sudoku/" class="lang-option" hreflang="en">EN</a>
+            <a href="/es/proyectos/sudoku/" class="lang-option active" hreflang="es" aria-current="true">ES</a>
+        </div>
+    </body>
+</html>
