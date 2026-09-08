@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../style.css">
+        <title>Proyectos | Aileen Abril Castro</title>
+        <link rel="icon" type="image/png" href="/favicon.PNG">
+        <link rel="alternate" hreflang="en" href="https://aileenabrilcastro.com/projects/">
+        <link rel="alternate" hreflang="es" href="https://aileenabrilcastro.com/es/proyectos/">
+        <link rel="alternate" hreflang="x-default" href="https://aileenabrilcastro.com/projects/">
+    </head>
+    <body>
+        <nav>
+            <a href="/es/" class="nav-name">
+                <img src="/favicon.PNG" alt="Logo de Aileen Abril Castro" class="nav-logo">
+                Aileen Abril Castro
+            </a>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="/es/">Inicio</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/es/#about">Sobre Mí</a></li>
+                        <li><a href="/es/#skills">Habilidades y Tecnologías</a></li>
+                        <li><a href="/es/#contact">Contacto</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/es/proyectos/" class="active">Proyectos</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#all">Todos</a></li>
+                        <li><a href="#network">Redes de Computadoras</a></li>
+                        <li><a href="#cyber">Ciberseguridad</a></li>
+                        <li><a href="#it">IT</a></li>
+                        <li><a href="#research">Investigación</a></li>
+                        <li><a href="#web">Desarrollo Web y Móvil</a></li>
+                        <li><a href="#3d">Gráficos 3D</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Proyectos</h1>
+            <p class="subtitle">
+                Algunos de mis proyectos, certificados y experiencias relacionados con las ciencias de la computación.
+            </p>
+
+            <div class="tabs">
+                <button class="tab active" data-category="all">Todos</button>
+                <button class="tab" data-category="network">Redes de Computadoras</button>
+                <button class="tab" data-category="cyber">Ciberseguridad</button>
+                <button class="tab" data-category="it">IT</button>
+                <button class="tab" data-category="research">Investigación</button>
+                <button class="tab" data-category="web">Desarrollo Web y Móvil</button>
+                <button class="tab" data-category="3d">Gráficos 3D</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <h3>HangOn App iOS</h3>
+                    <p>Una app iOS de clóset digital y sostenibilidad construida en Swift, presentada en el Apple Store 
+                        de Chicago como finalista de Kode With Klossy x Apple.
+                    </p>
+                    <div class="project-tags">
+                        <span>Swift</span>
+                        <span>iOS</span>
+                        <span>Xcode</span>
+                        <span>Keynote</span>
+                        <span>Kode With Klossy</span>
+                        <span>Apple</span>
+                        <span>Sostenibilidad</span>
+                    </div>
+                    <a href="/es/proyectos/hangon/" class="project-link">Ver más →</a>
+                </div>
+
+                <div class="project-card" data-category="it; network">
+                    <h3>Fundamentos de Cableado de Redes</h3>
+                    <p>Entrenamiento práctico en cableado estructurado junto a técnicos de redes. Aprendí a terminar 
+                        cables Cat6 usando el estándar de cableado T568B, practiqué protocolos de seguridad con fibra 
+                        óptica y usé equipo de tonificación para rastrear e identificar corridas de cables.
+                    </p>
+                    <div class="project-tags">
+                        <span>Cableado Cat6</span>
+                        <span>Seguridad Fibra Óptica</span>
+                        <span>Tonificación de Cables</span>
+                        <span>Cableado Estructurado</span>
+                    </div>
+                    <a href="/es/proyectos/cableado-de-redes/" class="project-link">Ver más →</a>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <h3>App Web de Sudoku</h3>
+                    <p>Un juego de Sudoku completo construido con React, TypeScript y Vite. Incluye temporizador 
+                        de pausa/reanudación, marcador local, generación de puzzles con Web Workers y un tema 
+                        de pixel art sakura.</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>Vite</span>
+                        <span>Web Workers</span>
+                        <span>Lógica Matemática</span>
+                    </div>
+                    <a href="/es/proyectos/sudoku/" class="project-link">Ver más →</a>
+                </div>
+
+                <div class="project-card" data-category="it">
+                    <h3>Sistema de Tickets ServiceNow para Operaciones IT/OT</h3>
+                    <p>Diseñé y entregué un sistema completo de tickets para el departamento de IT/OT en Genentech 
+                        usando ServiceNow. Colaboré con los dueños del sistema para recopilar requerimientos, 
+                        configuré el CMDB, entrené al equipo y creé documentación tutorial.</p>
+                    <div class="project-tags">
+                        <span>ServiceNow</span>
+                        <span>CMDB</span>
+                        <span>Operaciones IT</span>
+                        <span>Documentación</span>
+                    </div>
+                    <a href="/es/proyectos/service-now/" class="project-link">Ver más →</a>
+                </div>
+
+                <div class="project-card" data-category="research">
+                    <h3>Reglas de Participación: Por Qué y Cómo las Empresas Contribuyen al OSS</h3>
+                    <p>Investigué las motivaciones y métodos de las empresas para contribuir al código abierto 
+                        mediante entrevistas con 20 participantes de 17 empresas incluyendo Microsoft, Google y 
+                        Spotify. Publicado en IEEE/ACM ICSE 2023.</p>
+                    <div class="project-tags">
+                        <span>Código Abierto</span>
+                        <span>Investigación Cualitativa</span>
+                        <span>IEEE/ACM ICSE</span>
+                    </div>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/10172804" target="_blank" rel="noopener noreferrer" class="project-link">Ver Publicación →</a>
+                </div>
+
+                <div class="project-card" data-category="research">
+                    <h3>SocioEconomicMag: Una Plataforma para Estudiantes de Distintos Niveles Socioeconómicos</h3>
+                    <p>Estudio de caso de 16 meses evaluando SocioEconomicMag, un método de inspección para 
+                        inclusividad socioeconómica. Demostró que el proceso eliminó entre el 45-54% de los 
+                        errores de inclusividad SES en una plataforma de gestión de aprendizaje.</p>
+                    <div class="project-tags">
+                        <span>DEI en Tecnología</span>
+                        <span>Estudio de Caso</span>
+                        <span>HCI</span>
+                    </div>
+                    <a href="https://arxiv.org/abs/2304.04873" target="_blank" rel="noopener noreferrer" class="project-link">Ver Publicación →</a>
+                </div>
+
+                <div class="project-card" data-category="research">
+                    <h3>Percepciones del Estado de D&I e Iniciativas de D&I en la ASF</h3>
+                    <p>Exploré las percepciones de los contribuyentes sobre las iniciativas de Diversidad e Inclusión 
+                        en la Apache Software Foundation. Publicado en ACM/IEEE ICSE: Ingeniería de Software en 
+                        la Sociedad 2022.</p>
+                    <div class="project-tags">
+                        <span>Diversidad e Inclusión</span>
+                        <span>Código Abierto</span>
+                        <span>ACM/IEEE ICSE</span>
+                    </div>
+                    <a href="https://dl.acm.org/doi/abs/10.1145/3510458.3513008" target="_blank" rel="noopener noreferrer" class="project-link">Ver Publicación →</a>
+                </div>
+
+                <p class="empty-state">Próximamente...</p>
+            </div>
+        </main>
+
+        <footer>
+            <img src="/favicon.PNG" alt="Logo de Aileen Abril Castro" class="footer-logo">
+            <div class="footer-links">
+                <a href="mailto:contact@aileenabrilcastro.com">Correo</a>
+                <a href="https://github.com/aileencastro" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/aileencastrog" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+            <p class="footer-credit">© 2026 Aileen Abril Castro</p>
+        </footer>
+
+        <script src="../../script.js"></script>
+
+        <div class="lang-toggle" role="group" aria-label="Idioma">
+            <a href="/projects/" class="lang-option" hreflang="en">EN</a>
+            <a href="/es/proyectos/" class="lang-option active" hreflang="es" aria-current="true">ES</a>
+        </div>
+    </body>
+</html>
